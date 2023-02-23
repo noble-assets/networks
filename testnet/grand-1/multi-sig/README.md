@@ -6,7 +6,7 @@ Create a new key to be used in the testnet multi-sig. We recommend you use a led
 
 ### Install noble
 ```
-git clone git@github.com:strangelove-ventures/noble.git
+git clone https://github.com/strangelove-ventures/noble-networks.git
 cd noble
 git checkout v0.3.0
 make install
