@@ -45,17 +45,10 @@ nobled keys add [KEY-NAME] --keyring-backend os --recover
 > The amount must be exactly 1,000,000 ustake. We need each validator to have equal voting power.
 
 > **Warning**
-> The `ustake` given to each validator will be in the form of a [vesting account](https://docs.cosmos.network/v0.45/modules/auth/05_vesting.html); you will not be able to send this `ustake` to another wallet.
+> The `ustake` given to each validator will be in the form of a [vesting account](https://docs.cosmos.network/v0.45/modules/auth/05_vesting.html). While you will be able to delegated and undelegated, you will not be able to send this `ustake` to another wallet.
 
 6) Submit PR with Gentx
     1) Copy the contents of ${HOME}/.nobled/config/gentx/gentx-XXXXXXXX.json.
     2) Fork https://github.com/strangelove-ventures/noble-testnet
     3) Create a file gentx-{{VALIDATOR_NAME}}.json under the noble-networks/testnet/grand-1/gentx folder in the forked repo, paste the copied text into the file.
     4) Create a Pull Request to the main branch of the repository
-
----
-
-### Vesting Accounts
-Vesting accounts allow for assets to be delegated and undelegated, but the assets cannot be transferred to another account until vested.
-
-More information on vesting accounts is available [here](https://docs.cosmos.network/v0.45/modules/auth/05_vesting.html)
