@@ -1,7 +1,7 @@
 # grand-1
 
 - Chain-ID: grand-1
-- Tag[v0.3.0](https://github.com/strangelove-ventures/noble/releases/tag/v0.3.0)
+- Tag: [v0.3.0](https://github.com/strangelove-ventures/noble/releases/tag/v0.3.0)
 - [Heighliner Image](https://github.com/strangelove-ventures/noble/pkgs/container/noble/72469688?tag=v0.3.0)
 
 ## Validator Instructions
@@ -21,20 +21,24 @@
 3) Add or restore key.
 ```
 # Create New Key:
+
 nobled keys add <KEY-NAME> --keyring-backend os
 
 # Restore existing key with mnemonic seed phrase. 
 # You will be prompted to enter mnemonic seed. 
+
 nobled keys add <KEY-NAME> --keyring-backend os --recover
 ```
 
 4) Add genesis account:
+
     `nobled add-genesis-account <ADDRESS_OR_KEY_NAME> 1000000ustake --keyring-backend os`
 
 5) Create genesis transaction. Run:
     ```bash
-    # Feel free to fill out other optional flags.
     nobled gentx <KEY-NAME> "1000000ustake" --chain-id grand-1 --keyring-backend os
+
+    # Feel free to fill out other optional flags
     ```
 
     NOTE - Please Read
@@ -42,10 +46,10 @@ nobled keys add <KEY-NAME> --keyring-backend os --recover
     - The `ustake` given to each validator will be in the form of a vesting account; you will not be able to send this `ustake` to another wallet.
 
 6) Submit PR with Gentx
-Copy the contents of ${HOME}/.nobled/config/gentx/gentx-XXXXXXXX.json.
-Fork https://github.com/strangelove-ventures/noble-testnet
-Create a file gentx-{{VALIDATOR_NAME}}.json under the networks/testnet/grand-1/gentx folder in the forked repo, paste the copied text into the file.
-Create a Pull Request to the main branch of the repository
+    1) Copy the contents of ${HOME}/.nobled/config/gentx/gentx-XXXXXXXX.json.
+    2) Fork https://github.com/strangelove-ventures/noble-testnet
+    3) Create a file gentx-{{VALIDATOR_NAME}}.json under the networks/testnet/grand-1/gentx folder in the forked repo, paste the copied text into the file.
+    4)Create a Pull Request to the main branch of the repository
 
 
 ### Vesting Accounts
