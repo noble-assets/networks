@@ -95,7 +95,8 @@ nobled gentx [KEY-NAME] 1000000ustake --chain-id grand-1 --moniker [MONIKER] --i
 >**Note**
 > It is not mandatory, but it is recommended to specify a specific `--keyring-backend` when running these commands. Some commands may not default to the same backend.
 
-6) Submit a PR with Gentx
+5) Submit a PR with Gentx
     1) Fork https://github.com/strangelove-ventures/noble-networks.
     2) Copy `${HOME}/.nobled/config/gentx/gentx-XXXXXXXX.json` to  `testnet/grand-1/gentx/VALIDATOR_NAME.json`.
-    3) Create a pull request to the main branch of the repository.
+    3) Create a pull request to the main branch of the repository.  
+    4) Tag `danbryan` or `boojamya`.
