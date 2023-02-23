@@ -8,4 +8,4 @@ This repository is used for coordinating the [noble chain](https://github.com/st
 
 ## Testnets
 
-- [grand-1](./grand-1/)
+- [grand-1](./testnet/grand-1/)
