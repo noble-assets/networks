@@ -32,7 +32,7 @@ Binary checksums can differ based on many things to include go, libc, and make v
 
   * [Linux amd64 build](nobled)
   * Version: `v0.3.0`
-  * SHA256: `changeme`
+  * SHA256: `fc92d3b64b0618238b354bd82b31ed4aa35557129d679d90b070643df34c7c38`
 
   Example of using a volume mount to get the binary outside of the container onto your ubuntu server.
   ```
