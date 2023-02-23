@@ -47,6 +47,9 @@ nobled keys add [KEY-NAME] --keyring-backend os --recover
 > **Warning**
 > The `ustake` given to each validator will be in the form of a [vesting account](https://docs.cosmos.network/v0.45/modules/auth/05_vesting.html). While you will be able to delegated and undelegated, you will not be able to send this `ustake` to another wallet.
 
+>**Note**
+> `--keyring-backend os` is not mandatory, but it is recommended to specify a specific keyring-backend when running these commands. Some commands may not default to the same backend.
+
 6) Submit PR with Gentx
     1) Copy the contents of ${HOME}/.nobled/config/gentx/gentx-XXXXXXXX.json.
     2) Fork https://github.com/strangelove-ventures/noble-testnet
