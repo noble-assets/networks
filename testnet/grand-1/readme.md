@@ -32,7 +32,7 @@ nobled keys add [KEY-NAME] --keyring-backend os --recover
 
 4) Add genesis account:
     ```bash
-    nobled add-genesis-account [ADDRESS_OR_KEY_NAME] 1000000ustake --keyring-backend os
+    nobled add-genesis-account [ADDRESS_OR_KEY_NAME] 1000000ustake --vesting-amount $valGenesis  --vesting-end-time 253402261199 --keyring-backend os
     ```
 
 5) Create genesis transaction. Run:
