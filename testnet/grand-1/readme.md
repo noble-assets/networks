@@ -43,7 +43,8 @@ nobled keys add [KEY-NAME] --keyring-backend os --recover
     ```
 > **Warning**
 > The amount must be exactly 1,000,000 ustake. We need each validator to have equal voting power.
-> The `ustake` given to each validator will be in the form of a vesting account; you will not be able to send this `ustake` to another wallet.
+> **Warning**
+> The `ustake` given to each validator will be in the form of a [vesting account](#vesting-accounts); you will not be able to send this `ustake` to another wallet.
 
 6) Submit PR with Gentx
     1) Copy the contents of ${HOME}/.nobled/config/gentx/gentx-XXXXXXXX.json.
