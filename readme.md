@@ -1,4 +1,4 @@
-# noble testnet
+# noble networks
 
 This repository is used for coordinating the [noble chain](https://github.com/strangelove-ventures/noble)
 
