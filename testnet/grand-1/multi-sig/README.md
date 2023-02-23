@@ -30,7 +30,8 @@ _Note: You must have a github account for this._
 * Goto https://github.com/strangelove-ventures/noble-networks
 * Click Fork in the top right.  
 * Keep all the default values and click `Create fork`
-* Navigate to testnet/multi-sig
+* Click testnet/grand-1
+* Click multi-sig
 * Click `Add file` , then 'Create new file'
 * In `Name your file` use your company name, example `company-pub.json`  
 * in the box bellow, paste only your public key, EG
