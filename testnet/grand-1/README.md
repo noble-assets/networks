@@ -83,7 +83,7 @@ nobled add-genesis-account [ADDRESS_OR_KEY_NAME] 1000000ustake --vesting-amount 
 
 4) Create genesis transaction. Run:
 ```bash
-nobled gentx [KEY-NAME] 1000000ustake --chain-id grand-1 --moniker [MONIKER] --identity [KEYBASE_ID] --website [WEBSITE] --security-contact [CONTACT] --details [DETAILS]
+nobled gentx [KEY-NAME] 1000000ustake --chain-id grand-1 --moniker [MONIKER] --identity [KEYBASE_ID] --website [WEBSITE] --security-contact [CONTACT] --details [DETAILS] --note [NODEID@IP:PORT]
 
 ```
 > **Warning**
