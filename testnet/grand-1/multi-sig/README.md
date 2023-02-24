@@ -6,7 +6,7 @@ Create a new key to be used in the testnet multi-sig. We recommend you use a led
 
 ### Install noble
 ```
-git clone git@github.com:strangelove-ventures/noble.git
+git clone https://github.com/strangelove-ventures/noble.git
 cd noble
 git checkout v0.3.0
 make install
@@ -30,7 +30,8 @@ _Note: You must have a github account for this._
 * Goto https://github.com/strangelove-ventures/noble-networks
 * Click Fork in the top right.  
 * Keep all the default values and click `Create fork`
-* Navigate to testnet/multi-sig
+* Click testnet/grand-1
+* Click multi-sig
 * Click `Add file` , then 'Create new file'
 * In `Name your file` use your company name, example `company-pub.json`  
 * in the box bellow, paste only your public key, EG
