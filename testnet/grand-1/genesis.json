@@ -1,6 +1,6 @@
 {
-  "genesis_time": "2023-02-24T03:28:19.689856122Z",
-  "chain_id": "noble-1",
+  "genesis_time": "2023-02-28T16:00:00.000000000Z",
+  "chain_id": "grand-1",
   "initial_height": "1",
   "consensus_params": {
     "block": {
