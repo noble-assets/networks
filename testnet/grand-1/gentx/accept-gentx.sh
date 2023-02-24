@@ -6,16 +6,13 @@ amount='1000000ustake'
 
 # This is the epoch time when it will unlock
 unlock='531800807734'
-# noble_template_path='dan_k will provide'
-
-# start clean
-rm -rf ~/.noble
+noble_template_path='/home/danb/code/github/strangelove-ventures/noble-networks/testnet/grand-1/genesis.json'
 
 # create noble env
 nobled init default
 
 # custom noble template
-# cp $noble_template_path ~/.noble/config/genesis.json
+cp $noble_template_path ~/.noble/config/genesis.json
 
 # Find all the vals and created vested accounts.
 vals=()
