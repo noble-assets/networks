@@ -100,3 +100,25 @@ nobled gentx [KEY-NAME] 1000000ustake --chain-id grand-1 --moniker [MONIKER] --i
     2) Copy `${HOME}/.nobled/config/gentx/gentx-XXXXXXXX.json` to  `testnet/grand-1/gentx/VALIDATOR_NAME.json`.
     3) Create a pull request to the main branch of the repository.  
     4) Tag `danbryan` or `boojamya`.
+
+## Strangelove gentx Acceptance.
+Strangelove will accept all gentx files on X
+
+```
+#!/bin/bash
+amount='1000000ustake'
+unlock='253402261199'
+gentxdir='testnet/grand-1/gentx'
+
+nobled --home . init default
+
+validators=( 
+    noble1q422p5m0gej7gp43385thsfpmjuwql72sjfvfx # a41
+)
+
+for validator in "${validators[@]}"
+do
+  nobled --home . add-genesis-account $validator "$amount" --vesting-amount "$amount" --vesting-end-time "$unlock"
+  nobled --home . collect-gentxs --gentx-dir "$gentxdir"
+done
+```
