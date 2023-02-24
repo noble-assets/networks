@@ -31,5 +31,5 @@ done
 # Collect the gentx
 nobled collect-gentxs --gentx-dir .
 
-# Create the chain gensis.
+# Create the chain genesis.
 cp ~/.noble/config/genesis.json genesis-grand-1.json
