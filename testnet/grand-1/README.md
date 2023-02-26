@@ -39,6 +39,9 @@ minimum-gas-prices = "0.0uusdc"
 
 #B-Harvest
 f8a0d8942bcf02b94ed875ded9cb23944a53e48a@141.95.97.28:15656
+
+#Everstake
+d82829d886635ffcfcef66adfaa725acb522e1c6@83.136.255.243:26656
 ```
 
 ## Binary
