@@ -26,8 +26,20 @@ at `2023-02-24T23:59:00.000000000Z` the `strangelove` team will create the offic
 Genesis is scheduled for `2023-02-28T16:00:00.000000000Z`.  Please have your nodes started by this time.
 
 ## Chain Details
-- Chain-ID: grand-1
-- Tag: [v0.3.0](https://github.com/strangelove-ventures/noble/releases/tag/v0.3.0)
+```
+chain-id = "grand-1"
+minimum-gas-prices = "0.0uusdc"
+```
+## Persistent Peers
+```
+#Strangelove
+38179b18853d6a8cb86b99881e02cf72f18b9d0f@35.185.245.215:26656
+57546d799a1cdef74b9a174052821a6e93636dfc@34.168.206.220:26656
+6b76ad22a73897e3c39c7d87b7d12a3b7d690bff@34.127.46.223:26656
+
+#B-Harvest
+f8a0d8942bcf02b94ed875ded9cb23944a53e48a@141.95.97.28:15656
+```
 
 ## Binary
 
