@@ -69,3 +69,29 @@ type: multi
 address: noble1553j0zdxvnfty72t4vkrm72afrvk33unxdgy9g
 pubkey: '{"@type":"/cosmos.crypto.multisig.LegacyAminoPubKey","threshold":2,"public_keys":[{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"A24Ms1KsY/WVrg6j+pleIfvnFdjrU0/eB0ha1FRE6hD+"},{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"AlRjzl11UtfHJUMTf/IatbiUxOGxnk+E7J9DMFTIb0Uf"},{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"A2AC4WxQQZxeuSRrI1ey+kyGSgpbeV0dKcFzWbTcjeYy"}]}'
 ```
+
+### Activate a new validator
+
+```
+nobled tx bank send noble16n9zygqfkpj735mdnx579j6ma6f7putngjmw0a noble1ft2sjkdx9w0qrzchu83mn4p0ujmv83ucjs2zfw 1000000ustake \
+--node http://noble.ics-testnet.strange.love:26657 \
+--generate-only > activate-iqlusionTx.json
+```
+
+### Noble Member
+```
+nobled tx sign activate-iqlusionTx.json \
+--multisig=noble16n9zygqfkpj735mdnx579j6ma6f7putngjmw0a
+--from noble1svj4j8tt2wfd8wsswn274h2kkpp5phstfppt2r \
+--node http://noble.ics-testnet.strange.love:26657 \
+--output-document=activate-iqlusion-noble.json
+```
+
+### Everstake Member
+```
+nobled tx sign activate-iqlusionTx.json \
+--multisig=noble16n9zygqfkpj735mdnx579j6ma6f7putngjmw0a
+--from noble1tewps8n4rwzyen4dc9pn89jdw4j2g3at2ad9uj \
+--node http://noble.ics-testnet.strange.love:26657 \
+--output-document=activate-iqlusion-everstake.json
+```
