@@ -73,25 +73,60 @@ pubkey: '{"@type":"/cosmos.crypto.multisig.LegacyAminoPubKey","threshold":2,"pub
 ### Activate a new validator
 
 ```
-nobled tx bank send noble16n9zygqfkpj735mdnx579j6ma6f7putngjmw0a noble1ft2sjkdx9w0qrzchu83mn4p0ujmv83ucjs2zfw 1000000ustake \
---node http://noble.ics-testnet.strange.love:26657 \
---generate-only > activate-iqlusionTx.json
+nobled tx vesting create-vesting-account noble10zm5eafxsenx9kfufv6hc3g664xvpv56pnwscy 1000000ustake 531800807734 \
+--from noble16n9zygqfkpj735mdnx579j6ma6f7putngjmw0a \
+--node https://rpc.testnet.noble.strange.love:443 \
+--generate-only > activate-swissstaking-unsigned.json
 ```
 
 ### Noble Member
 ```
-nobled tx sign activate-iqlusionTx.json \
---multisig=noble16n9zygqfkpj735mdnx579j6ma6f7putngjmw0a
+nobled tx sign activate-swissstaking-unsigned.json \
+--multisig=noble16n9zygqfkpj735mdnx579j6ma6f7putngjmw0a \
 --from noble1svj4j8tt2wfd8wsswn274h2kkpp5phstfppt2r \
---node http://noble.ics-testnet.strange.love:26657 \
---output-document=activate-iqlusion-noble.json
+--node https://rpc.testnet.noble.strange.love:443 \
+--chain-id grand-1 \
+--output-document=activate-swissstaking-noble.json
 ```
 
 ### Everstake Member
 ```
-nobled tx sign activate-iqlusionTx.json \
---multisig=noble16n9zygqfkpj735mdnx579j6ma6f7putngjmw0a
+nobled tx sign activate-swissstaking-unsigned.json \
+--multisig=noble16n9zygqfkpj735mdnx579j6ma6f7putngjmw0a \
 --from noble1tewps8n4rwzyen4dc9pn89jdw4j2g3at2ad9uj \
---node http://noble.ics-testnet.strange.love:26657 \
---output-document=activate-iqlusion-everstake.json
+--node https://rpc.testnet.noble.strange.love:443 \
+--chain-id grand-1 \
+--output-document=activate-swissstaking-everstake.json
 ```
+
+### Strangelove Member
+```
+nobled tx sign activate-swissstaking-unsigned.json \
+--multisig=noble16n9zygqfkpj735mdnx579j6ma6f7putngjmw0a \
+--from noble18dtpjcgxq2zvsg9qv527rzwyv0ysxlqd0fh5eq \
+--node https://rpc.testnet.noble.strange.love:443 \
+--chain-id grand-1 \
+--output-document=activate-swissstaking-strangelove.json
+```
+
+### noble-multisig
+```
+nobled tx multisign \
+activate-swissstaking-unsigned.json \
+noble-multisig \
+activate-swissstaking-strangelove.json activate-swissstaking-everstake.json \
+--node https://rpc.testnet.noble.strange.love:443 \
+--chain-id grand-1 \
+> activate-swissstaking-signed.json
+```
+
+```
+nobled tx broadcast activate-swissstaking-signed.json \
+ --node https://rpc.testnet.noble.strange.love:443 \
+--chain-id grand-1
+```
+
+
+nobled tx bank send noble10zm5eafxsenx9kfufv6hc3g664xvpv56pnwscy noble16n9zygqfkpj735mdnx579j6ma6f7putngjmw0a 1000000ustake \
+--node https://rpc.testnet.noble.strange.love:443 \
+--chain-id grand-1
