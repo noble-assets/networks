@@ -1,4 +1,4 @@
-![Noble banner](https://raw.githubusercontent.com/strangelove-ventures/noble-networks/main/Generic-Noble-Gradient.png)
+![Noble banner](https://raw.githubusercontent.com/strangelove-ventures/noble-networks/main/Twitter_Banner.png)
 # Noble Chain Information
 
 ## Permissioned Network  
