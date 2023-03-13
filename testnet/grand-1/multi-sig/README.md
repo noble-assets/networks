@@ -1,3 +1,4 @@
+![Noble banner](https://raw.githubusercontent.com/strangelove-ventures/noble-networks/main/Generic-Noble-Gradient.png)
 # Noble Multi-Sig Testnet Participants
 During the noble testnet, we will be testing several multi-sig activities.  One of the first activities will be to manually send stake to a new validator. We have identified strangelove, noble, and everstake to be the multi-sig members for the testnet.  For mainnet additional organiztions will be included.
 
