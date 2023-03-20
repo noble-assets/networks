@@ -1,0 +1,155 @@
+![Noble banner](https://raw.githubusercontent.com/strangelove-ventures/noble-networks/main/Twitter_Banner.png)
+# Noble Chain Information
+
+## Permissioned Network  
+Noble is a permissioned network. Unlike permissionless Proof of Stake chains, the only way of participating in the Noble mainnet is through a delegation of staking tokens by the Noble Maintenance Multisig (NMM). 
+
+ We’re currently capped for participation and chose validators based on number of factors including 
+- Running validator on Cosmos Hub 
+- Geographic distribution of nodes 
+- Community contributions (educational content, events/marketing presence, etc) 
+- Infrastructure development (block explorers, wallets, core Cosmos stack development, testing, etc) 
+- Significant ATOM stake (1%+ voting power)
+
+We will reach out in the future if we're looking to expand the val set.
+
+## Overview
+blurb from jelena
+
+## Timeline
+
+**2023-03-20** 
+
+Request for gentx files will be sent to the Noble Validators Telegram group.
+
+**2023-02-24** 
+
+at `2023-02-24T23:59:00.000000000Z` the `strangelove` team will create the official [genesis file](https://raw.githubusercontent.com/strangelove-ventures/noble-networks/main/mainnet/noble-1/genesis.json). 
+
+**2023-02-27** 
+Genesis is scheduled for `2023-02-28T16:00:00.000000000Z`.  Please have your nodes started by this time.
+
+## Chain Details
+```
+chain-id = "noble-1"
+minimum-gas-prices = "0.0uusdc"
+```
+## Persistent Peers
+```
+#Strangelove
+38179b18853d6a8cb86b99881e02cf72f18b9d0f@34.127.46.223:26656
+57546d799a1cdef74b9a174052821a6e93636dfc@34.145.87.4:26656
+6b76ad22a73897e3c39c7d87b7d12a3b7d690bff@34.168.48.128:26656
+
+#B-Harvest
+f8a0d8942bcf02b94ed875ded9cb23944a53e48a@141.95.97.28:15656
+
+#Everstake
+d82829d886635ffcfcef66adfaa725acb522e1c6@83.136.255.243:26656
+```
+
+## Binary
+
+Docker images are available [here](https://github.com/strangelove-ventures/noble/pkgs/container/noble/72469688?tag=v0.4.3). You can generate the binary by building from the Official Repo. Or alternatively you can use the Verify process below to build inside docker and guarantee you have the correct source.
+
+```
+git clone https://github.com/strangelove-ventures/noble
+cd noble
+git checkout v0.4.3
+make install
+```
+### Verify Binary Checksum
+Binary checksums can differ based on many things to include go, libc, and make versions. To get a consistent checksum you can use something like docker to verify.
+
+  * [Linux amd64 build](nobled)
+  * Version: `v0.4.3`
+  * SHA256: `f6084087c836cf02265ca213fba863420b2d22599d7e0b9efe12e16f765aefd2`
+
+  Example of using a volume mount to get the binary outside of the container onto your ubuntu server.
+  ```
+  #run on your ubuntu server
+  # use the `realpath` for the volume mount.
+  docker run -v /home/ubuntu/go/bin:/root/go/bin -it --entrypoint /bin/bash ghcr.io/strangelove-ventures/checksum:v.0.1.0
+  ```
+  ```
+  # run inside docker container.
+  git clone https://github.com/strangelove-ventures/noble.git
+  cd noble
+  git fetch
+  git checkout v0.4.3
+  make install
+  sha256sum ~/go/bin/nobled
+  ```
+  expected return `f6084087c836cf02265ca213fba863420b2d22599d7e0b9efe12e16f765aefd2`  
+  
+  Now, verify the checksum on your local ubuntu server  
+  ```
+  #run on your ubuntu server
+  sha256sum /home/ubuntu/go/bin/nobled
+  ```
+  expected return `f6084087c836cf02265ca213fba863420b2d22599d7e0b9efe12e16f765aefd2` 
+
+## Validator Instructions
+
+1) Init Chain. Run:
+
+    `nobled --chain-id noble-1 init <YOUR-MONIKER>`
+
+2) Add or restore key.
+```bash
+# Create New Key:
+
+nobled keys add [KEY-NAME] 
+
+# Restore existing key with mnemonic seed phrase. 
+# You will be prompted to enter mnemonic seed. 
+
+nobled keys add [KEY-NAME]  --recover
+```
+
+3) Add genesis account:
+```bash
+nobled add-genesis-account [ADDRESS_OR_KEY_NAME] 1000000ustake --vesting-amount 1000000ustake  --vesting-end-time 253402261199 
+```
+
+4) Create genesis transaction. Run:
+```bash
+nobled gentx [KEY-NAME] 1000000ustake --chain-id noble-1 --moniker [MONIKER] --identity [KEYBASE_ID] --website [WEBSITE] --security-contact [CONTACT] --details [DETAILS] --note [NODEID@IP:PORT]
+
+```
+> **Warning**
+> The amount must be exactly 1,000,000 ustake. We need each validator to have equal voting power.
+
+> **Warning**
+> The `ustake` given to each validator will be in the form of a [vesting account](https://docs.cosmos.network/v0.45/modules/auth/05_vesting.html). While you will be able to delegate and undelegate, you will not be able to send this `ustake` to another wallet.
+
+>**Note**
+> It is not mandatory, but it is recommended to specify a specific `--keyring-backend` when running these commands. Some commands may not default to the same backend.
+
+5) Submit a PR with Gentx
+    1) Fork https://github.com/strangelove-ventures/noble-networks.
+    2) Copy `${HOME}/.nobled/config/gentx/gentx-XXXXXXXX.json` to  `mainnet/noble-1/gentx/VALIDATOR_NAME.json`.
+    3) Create a pull request to the main branch of the repository.  
+    4) Tag `danbryan` or `boojamya`.
+
+## Strangelove gentx Acceptance.
+Strangelove will accept all gentx files on X
+
+```
+#!/bin/bash
+amount='1000000ustake'
+unlock='253402261199'
+gentxdir='mainnet/noble-1/gentx'
+
+nobled --home . init default
+
+validators=( 
+    noble1q422p5m0gej7gp43385thsfpmjuwql72sjfvfx # a41
+)
+
+for validator in "${validators[@]}"
+do
+  nobled --home . add-genesis-account $validator "$amount" --vesting-amount "$amount" --vesting-end-time "$unlock"
+  nobled --home . collect-gentxs --gentx-dir "$gentxdir"
+done
+```
