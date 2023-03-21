@@ -44,20 +44,13 @@
       "supply": [],
       "denom_metadata": [
         {
-          "description": "The staking asset for Noble Chain",
+          "description": "The controlled staking asset for Noble Chain",
           "denom_units": [
             {
               "denom": "ustake",
               "exponent": 0,
               "aliases": [
                 "microstake"
-              ]
-            },
-            {
-              "denom": "mstake",
-              "exponent": 3,
-              "aliases": [
-                "millistake"
               ]
             },
             {
@@ -69,10 +62,10 @@
           "base": "ustake",
           "display": "stake",
           "name": "stake",
-          "symbol": "stake"
+          "symbol": "STAKE"
         },
         {
-          "description": "",
+          "description": "Frienzies are an IBC token redeemable exclusively for a physical asset issued by the Noble entity.",
           "denom_units": [
             {
               "denom": "ufrienzies",
