@@ -1,4 +1,17 @@
+![Noble banner](https://raw.githubusercontent.com/strangelove-ventures/noble-networks/main/Twitter_Banner.png)
 # Noble Chain Information
+
+## Permissioned Network  
+Noble is a permissioned network. Unlike permissionless Proof of Stake chains, the only way of participating in the Noble testnet is through a delegation of staking tokens by the Noble Maintenance Multisig (NMM). 
+
+ We’re currently capped for participation and chose validators based on number of factors including 
+- Running validator on Cosmos Hub 
+- Geographic distribution of nodes 
+- Community contributions (educational content, events/marketing presence, etc) 
+- Infrastructure development (block explorers, wallets, core Cosmos stack development, testing, etc) 
+- Significant ATOM stake (1%+ voting power)
+
+We will reach out in the future if we're looking to expand the val set.
 
 ## Timeline
 
@@ -14,8 +27,23 @@ at `2023-02-24T23:59:00.000000000Z` the `strangelove` team will create the offic
 Genesis is scheduled for `2023-02-28T16:00:00.000000000Z`.  Please have your nodes started by this time.
 
 ## Chain Details
-- Chain-ID: grand-1
-- Tag: [v0.3.0](https://github.com/strangelove-ventures/noble/releases/tag/v0.3.0)
+```
+chain-id = "grand-1"
+minimum-gas-prices = "0.0uusdc"
+```
+## Persistent Peers
+```
+#Strangelove
+38179b18853d6a8cb86b99881e02cf72f18b9d0f@34.127.46.223:26656
+57546d799a1cdef74b9a174052821a6e93636dfc@34.145.87.4:26656
+6b76ad22a73897e3c39c7d87b7d12a3b7d690bff@34.168.48.128:26656
+
+#B-Harvest
+f8a0d8942bcf02b94ed875ded9cb23944a53e48a@141.95.97.28:15656
+
+#Everstake
+d82829d886635ffcfcef66adfaa725acb522e1c6@83.136.255.243:26656
+```
 
 ## Binary
 
@@ -100,3 +128,25 @@ nobled gentx [KEY-NAME] 1000000ustake --chain-id grand-1 --moniker [MONIKER] --i
     2) Copy `${HOME}/.nobled/config/gentx/gentx-XXXXXXXX.json` to  `testnet/grand-1/gentx/VALIDATOR_NAME.json`.
     3) Create a pull request to the main branch of the repository.  
     4) Tag `danbryan` or `boojamya`.
+
+## Strangelove gentx Acceptance.
+Strangelove will accept all gentx files on X
+
+```
+#!/bin/bash
+amount='1000000ustake'
+unlock='253402261199'
+gentxdir='testnet/grand-1/gentx'
+
+nobled --home . init default
+
+validators=( 
+    noble1q422p5m0gej7gp43385thsfpmjuwql72sjfvfx # a41
+)
+
+for validator in "${validators[@]}"
+do
+  nobled --home . add-genesis-account $validator "$amount" --vesting-amount "$amount" --vesting-end-time "$unlock"
+  nobled --home . collect-gentxs --gentx-dir "$gentxdir"
+done
+```
