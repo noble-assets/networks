@@ -22,12 +22,12 @@ On March 27, 2023 at approximately 5PM UTC, Noble will launch with the FRNZ toke
 
 Request for gentx files will be sent to the Noble Validators Telegram group.
 
-**2023-02-24** 
+**2023-03-24** 
 
-at `2023-02-24T23:59:00.000000000Z` the `strangelove` team will create the official [genesis file](https://raw.githubusercontent.com/strangelove-ventures/noble-networks/main/mainnet/noble-1/genesis.json). 
+at `2023-03-24T23:59:00.000000000Z` the `strangelove` team will create the official [genesis file](https://raw.githubusercontent.com/strangelove-ventures/noble-networks/main/mainnet/noble-1/genesis.json). 
 
-**2023-02-27** 
-Genesis is scheduled for `2023-02-28T16:00:00.000000000Z`.  Please have your nodes started by this time.
+**2023-03-27** 
+Genesis is scheduled for `2023-03-28T16:00:00.000000000Z`.  Please have your nodes started by this time.
 
 ## Chain Details
 ```
