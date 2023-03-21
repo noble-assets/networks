@@ -14,7 +14,7 @@ Noble is a permissioned network. Unlike permissionless Proof of Stake chains, th
 We will reach out in the future if we're looking to expand the val set.
 
 ## Overview
-blurb from jelena
+On March 27, 2023 at approximately 5PM UTC, Noble will launch with the FRNZ token, a limited-supply token designed to be redeemed for a physical asset. The FRNZ token does not have governance or staking utility. It is purely designed to showcase the asset issuance functionality of the Noble chain via token minting, burning and transfers using the Inter-Blcockchain Communication (IBC) protocol. Future chain upgrades will be initiated once Noble adds support for native assets. 
 
 ## Timeline
 
