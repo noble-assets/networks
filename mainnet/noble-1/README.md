@@ -14,7 +14,7 @@ Noble is a permissioned network. Unlike permissionless Proof of Stake chains, th
 We will reach out in the future if we're looking to expand the val set.
 
 ## Overview
-blurb from jelena
+On March 27, 2023 at approximately 5PM UTC, Noble will launch with the FRNZ token, a limited-supply token designed to be redeemed for a physical asset. The FRNZ token does not have governance or staking utility. It is purely designed to showcase the asset issuance functionality of the Noble chain via token minting, burning and transfers using the Inter-Blcockchain Communication (IBC) protocol. Future chain upgrades will be initiated once Noble adds support for native assets. 
 
 ## Timeline
 
@@ -37,32 +37,24 @@ minimum-gas-prices = "0.0uusdc"
 ## Persistent Peers
 ```
 #Strangelove
-38179b18853d6a8cb86b99881e02cf72f18b9d0f@34.127.46.223:26656
-57546d799a1cdef74b9a174052821a6e93636dfc@34.145.87.4:26656
-6b76ad22a73897e3c39c7d87b7d12a3b7d690bff@34.168.48.128:26656
-
-#B-Harvest
-f8a0d8942bcf02b94ed875ded9cb23944a53e48a@141.95.97.28:15656
-
-#Everstake
-d82829d886635ffcfcef66adfaa725acb522e1c6@83.136.255.243:26656
+TBD
 ```
 
 ## Binary
 
-Docker images are available [here](https://github.com/strangelove-ventures/noble/pkgs/container/noble/72469688?tag=v0.3.0). You can generate the binary by building from the Official Repo. Or alternatively you can use the Verify process below to build inside docker and guarantee you have the correct source.
+Docker images are available [here](https://github.com/strangelove-ventures/noble/pkgs/container/noble/72469688?tag=v1.0.0). You can generate the binary by building from the Official Repo. Or alternatively you can use the Verify process below to build inside docker and guarantee you have the correct source.
 
 ```
 git clone https://github.com/strangelove-ventures/noble
 cd noble
-git checkout v0.3.0
+git checkout v1.0.0
 make install
 ```
 ### Verify Binary Checksum
 Binary checksums can differ based on many things to include go, libc, and make versions. To get a consistent checksum you can use something like docker to verify.
 
   * [Linux amd64 build](nobled)
-  * Version: `v0.3.0`
+  * Version: `v1.0.0`
   * SHA256: `fc92d3b64b0618238b354bd82b31ed4aa35557129d679d90b070643df34c7c38`
 
   Example of using a volume mount to get the binary outside of the container onto your ubuntu server.
@@ -76,7 +68,7 @@ Binary checksums can differ based on many things to include go, libc, and make v
   git clone https://github.com/strangelove-ventures/noble.git
   cd noble
   git fetch
-  git checkout v0.3.0
+  git checkout v1.0.0
   make install
   sha256sum ~/go/bin/nobled
   ```
