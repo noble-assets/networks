@@ -50,20 +50,20 @@ d82829d886635ffcfcef66adfaa725acb522e1c6@83.136.255.243:26656
 
 ## Binary
 
-Docker images are available [here](https://github.com/strangelove-ventures/noble/pkgs/container/noble/72469688?tag=v0.4.3). You can generate the binary by building from the Official Repo. Or alternatively you can use the Verify process below to build inside docker and guarantee you have the correct source.
+Docker images are available [here](https://github.com/strangelove-ventures/noble/pkgs/container/noble/72469688?tag=v0.3.0). You can generate the binary by building from the Official Repo. Or alternatively you can use the Verify process below to build inside docker and guarantee you have the correct source.
 
 ```
 git clone https://github.com/strangelove-ventures/noble
 cd noble
-git checkout v0.4.3
+git checkout v0.3.0
 make install
 ```
 ### Verify Binary Checksum
 Binary checksums can differ based on many things to include go, libc, and make versions. To get a consistent checksum you can use something like docker to verify.
 
   * [Linux amd64 build](nobled)
-  * Version: `v0.4.3`
-  * SHA256: `f6084087c836cf02265ca213fba863420b2d22599d7e0b9efe12e16f765aefd2`
+  * Version: `v0.3.0`
+  * SHA256: `fc92d3b64b0618238b354bd82b31ed4aa35557129d679d90b070643df34c7c38`
 
   Example of using a volume mount to get the binary outside of the container onto your ubuntu server.
   ```
@@ -76,18 +76,18 @@ Binary checksums can differ based on many things to include go, libc, and make v
   git clone https://github.com/strangelove-ventures/noble.git
   cd noble
   git fetch
-  git checkout v0.4.3
+  git checkout v0.3.0
   make install
   sha256sum ~/go/bin/nobled
   ```
-  expected return `f6084087c836cf02265ca213fba863420b2d22599d7e0b9efe12e16f765aefd2`  
+  expected return `fc92d3b64b0618238b354bd82b31ed4aa35557129d679d90b070643df34c7c38`  
   
   Now, verify the checksum on your local ubuntu server  
   ```
   #run on your ubuntu server
   sha256sum /home/ubuntu/go/bin/nobled
   ```
-  expected return `f6084087c836cf02265ca213fba863420b2d22599d7e0b9efe12e16f765aefd2` 
+  expected return `fc92d3b64b0618238b354bd82b31ed4aa35557129d679d90b070643df34c7c38` 
 
 ## Validator Instructions
 
@@ -131,25 +131,3 @@ nobled gentx [KEY-NAME] 1000000ustake --chain-id noble-1 --moniker [MONIKER] --i
     2) Copy `${HOME}/.nobled/config/gentx/gentx-XXXXXXXX.json` to  `mainnet/noble-1/gentx/VALIDATOR_NAME.json`.
     3) Create a pull request to the main branch of the repository.  
     4) Tag `danbryan` or `boojamya`.
-
-## Strangelove gentx Acceptance.
-Strangelove will accept all gentx files on X
-
-```
-#!/bin/bash
-amount='1000000ustake'
-unlock='253402261199'
-gentxdir='mainnet/noble-1/gentx'
-
-nobled --home . init default
-
-validators=( 
-    noble1q422p5m0gej7gp43385thsfpmjuwql72sjfvfx # a41
-)
-
-for validator in "${validators[@]}"
-do
-  nobled --home . add-genesis-account $validator "$amount" --vesting-amount "$amount" --vesting-end-time "$unlock"
-  nobled --home . collect-gentxs --gentx-dir "$gentxdir"
-done
-```
