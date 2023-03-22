@@ -4,7 +4,7 @@
 This repository is used for coordinating the [noble chain](https://github.com/strangelove-ventures/noble)
 
 ## Mainnet
-- TBD
+- [noble-1](./mainnet/noble-1/)
 
 
 ## Testnets
