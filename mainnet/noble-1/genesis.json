@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2023-03-28T16:00:00.00Z",
+  "genesis_time": "2023-03-28T16:00:00Z",
   "chain_id": "noble-1",
   "initial_height": "1",
   "consensus_params": {
@@ -30,7 +30,15 @@
         "sig_verify_cost_ed25519": "590",
         "sig_verify_cost_secp256k1": "1000"
       },
-      "accounts": []
+      "accounts": [
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "noble1msds7uv3mrqtzeua3n2eyeqjfs7tsm06qle3y4",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        }
+      ]
     },
     "authz": {
       "authorization": []
@@ -232,7 +240,9 @@
       "mintersList": [],
       "pauser": null,
       "blacklister": null,
-      "owner": null,
+      "owner": {
+        "address": "noble1msds7uv3mrqtzeua3n2eyeqjfs7tsm06qle3y4"
+      },
       "minterControllerList": [],
       "mintingDenom": "ufrienzies"
     },
