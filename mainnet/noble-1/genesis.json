@@ -44,6 +44,20 @@
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "noble1rjqjj37v2sehhs6gxv09nm3hdezd0xv4rev77t",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "noble1vukaakptjhzj882dzq70gp6900yn2plt2jp2qn",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
         }
       ]
     },
@@ -253,7 +267,9 @@
         "address": "noble1msds7uv3mrqtzeua3n2eyeqjfs7tsm06qle3y4"
       },
       "minterControllerList": [],
-      "mintingDenom": "ufrienzies"
+      "mintingDenom": {
+        "denom": "ufrienzies"
+      }
     },
     "transfer": {
       "port_id": "transfer",
