@@ -37,6 +37,13 @@
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "noble1lqcqj5khzkr7vydg7v03csdsqjy5lw3vq83qgy",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
         }
       ]
     },
@@ -236,7 +243,9 @@
       "paused": {
         "paused": false
       },
-      "masterMinter": null,
+      "masterMinter": {
+        "address": "noble1lqcqj5khzkr7vydg7v03csdsqjy5lw3vq83qgy"
+      },
       "mintersList": [],
       "pauser": null,
       "blacklister": null,
