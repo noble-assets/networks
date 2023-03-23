@@ -28,7 +28,7 @@
         }
       }
     ],
-    "memo": "",
+    "memo": "fb9ca8ccb65d0cb69c966cdfd6fae7c6a5377f3f@35.230.125.14:26656",
     "timeout_height": "0",
     "extension_options": [],
     "non_critical_extension_options": []
@@ -98,6 +98,6 @@
     }
   },
   "signatures": [
-    "CkAXDW/+tMs5+dBfB+vE8evwTXxKK10QPv1ebFWnqT04vDPQBgU/JISnplMo8cCeR06NjXsiVzE9tC1YuSL05xLZCkAcyryncxHAVITEyvHbzLl7XiwAKtPys5KkWge2LQX0CjisVMmCNsEAhxQtzUAX+fdyn3CJIx6COjBmrG8TqHO9CkDjae2yZVQO1r9y5IgGtO/UBmJiuDidlUnTFzC+TgnH9hADyYlplDEluQjVDQWBN67rBiVXp2latHUB5cQ0ep8F"
+    "CkB6zH5hecWb2nDyOd7hqhr5aZ1W6dHcV0SQXCvMCU7uqRWZ1veytwu+PY8d3w58DKBOAQ4U7AA0LCi0/Kxhe23OCkCccEvGwnvXO9YsLu3c/CYjgz5SrFxGINaUQJCiP+CYcxgJ9SaqP4XMtaZsnsVah99WSr29YnFoCBbBtc3xSddYCkCcu+nw/lgXGGZlKSSCiOCMOmtmyiol0FZd20gH9OpB2wbT+2NwRFkwo+4b/oNnwzhDRfUldmhqvPPR50XyEyyC"
   ]
 }
