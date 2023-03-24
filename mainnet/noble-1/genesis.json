@@ -58,6 +58,13 @@
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "noble1tq944l2tgxugwvu74yke37yt7pa27p8467rxg5",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
         }
       ]
     },
@@ -69,7 +76,17 @@
         "send_enabled": [],
         "default_send_enabled": true
       },
-      "balances": [],
+      "balances": [
+        {
+          "address": "noble1tq944l2tgxugwvu74yke37yt7pa27p8467rxg5",
+          "coins": [
+            {
+              "denom": "ustake",
+              "amount": "1000000000000"
+            }
+          ]
+        }
+      ],
       "supply": [],
       "denom_metadata": [
         {
@@ -221,7 +238,7 @@
     },
     "params": {
       "params": {
-        "authority": ""
+        "authority": "noble1tq944l2tgxugwvu74yke37yt7pa27p8467rxg5"
       }
     },
     "slashing": {
@@ -281,7 +298,7 @@
     },
     "upgrade": {
       "params": {
-        "authority": ""
+        "authority": "noble1tq944l2tgxugwvu74yke37yt7pa27p8467rxg5"
       }
     },
     "vesting": {}
