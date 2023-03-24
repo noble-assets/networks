@@ -27,7 +27,7 @@ Request for gentx files will be sent to the Noble Validators Telegram group.
 at `2023-03-24T23:59:00.000000000Z` the `strangelove` team will create the official [genesis file](https://raw.githubusercontent.com/strangelove-ventures/noble-networks/main/mainnet/noble-1/genesis.json). 
 
 **2023-03-27** 
-Genesis is scheduled for `2023-03-28T16:00:00.000000000Z`.  Please have your nodes started by this time.
+Genesis is scheduled for `2023-03-27T16:00:00.000000000Z`.  Please have your nodes started by this time.
 
 ## Chain Details
 ```
