@@ -90,7 +90,7 @@
             ],
             "delegated_free": [],
             "delegated_vesting": [],
-            "end_time": "531800807734"
+            "end_time": "95625100799"
           }
         },
         {
@@ -110,7 +110,7 @@
             ],
             "delegated_free": [],
             "delegated_vesting": [],
-            "end_time": "531800807734"
+            "end_time": "95625100799"
           }
         },
         {
@@ -130,7 +130,7 @@
             ],
             "delegated_free": [],
             "delegated_vesting": [],
-            "end_time": "531800807734"
+            "end_time": "95625100799"
           }
         },
         {
@@ -150,7 +150,7 @@
             ],
             "delegated_free": [],
             "delegated_vesting": [],
-            "end_time": "531800807734"
+            "end_time": "95625100799"
           }
         },
         {
@@ -170,7 +170,7 @@
             ],
             "delegated_free": [],
             "delegated_vesting": [],
-            "end_time": "531800807734"
+            "end_time": "95625100799"
           }
         },
         {
@@ -190,7 +190,7 @@
             ],
             "delegated_free": [],
             "delegated_vesting": [],
-            "end_time": "531800807734"
+            "end_time": "95625100799"
           }
         },
         {
@@ -210,7 +210,7 @@
             ],
             "delegated_free": [],
             "delegated_vesting": [],
-            "end_time": "531800807734"
+            "end_time": "95625100799"
           }
         },
         {
@@ -230,7 +230,7 @@
             ],
             "delegated_free": [],
             "delegated_vesting": [],
-            "end_time": "531800807734"
+            "end_time": "95625100799"
           }
         },
         {
@@ -250,7 +250,7 @@
             ],
             "delegated_free": [],
             "delegated_vesting": [],
-            "end_time": "531800807734"
+            "end_time": "95625100799"
           }
         },
         {
@@ -270,7 +270,7 @@
             ],
             "delegated_free": [],
             "delegated_vesting": [],
-            "end_time": "531800807734"
+            "end_time": "95625100799"
           }
         },
         {
@@ -290,7 +290,7 @@
             ],
             "delegated_free": [],
             "delegated_vesting": [],
-            "end_time": "531800807734"
+            "end_time": "95625100799"
           }
         },
         {
@@ -310,7 +310,7 @@
             ],
             "delegated_free": [],
             "delegated_vesting": [],
-            "end_time": "531800807734"
+            "end_time": "95625100799"
           }
         },
         {
@@ -330,7 +330,7 @@
             ],
             "delegated_free": [],
             "delegated_vesting": [],
-            "end_time": "531800807734"
+            "end_time": "95625100799"
           }
         },
         {
@@ -350,7 +350,7 @@
             ],
             "delegated_free": [],
             "delegated_vesting": [],
-            "end_time": "531800807734"
+            "end_time": "95625100799"
           }
         },
         {
@@ -370,7 +370,7 @@
             ],
             "delegated_free": [],
             "delegated_vesting": [],
-            "end_time": "531800807734"
+            "end_time": "95625100799"
           }
         },
         {
@@ -390,7 +390,7 @@
             ],
             "delegated_free": [],
             "delegated_vesting": [],
-            "end_time": "531800807734"
+            "end_time": "95625100799"
           }
         },
         {
@@ -410,7 +410,7 @@
             ],
             "delegated_free": [],
             "delegated_vesting": [],
-            "end_time": "531800807734"
+            "end_time": "95625100799"
           }
         },
         {
@@ -430,7 +430,7 @@
             ],
             "delegated_free": [],
             "delegated_vesting": [],
-            "end_time": "531800807734"
+            "end_time": "95625100799"
           }
         }
       ]
@@ -530,7 +530,7 @@
           "coins": [
             {
               "denom": "ustake",
-              "amount": "1000000000000"
+              "amount": "1000000000000000"
             }
           ]
         },
@@ -619,7 +619,7 @@
       "supply": [],
       "denom_metadata": [
         {
-          "description": "The controlled staking asset for Noble Chain",
+          "description": "The permissioned staking asset for Noble Chain",
           "denom_units": [
             {
               "denom": "ustake",
