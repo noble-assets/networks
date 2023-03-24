@@ -10,13 +10,13 @@ unlock='531800807734'
 noble_template_path="$(pwd)/genesis_template.json"
 
 # custom noble template
-cp $noble_template_path ~/.noble/config/genesis.json
+# cp $noble_template_path ~/.noble/config/genesis.json
 
 # Find all the vals and created vested accounts.
 vals=()
 while IFS='' read -r val; do
     vals+=("$val")
-done <<<"$(find . -name "*.json" ! -name "genesis*.json -exec jq -r '.body.messages[].delegator_address' {} \;)"
+done <<<"$(find . -name "*.json" ! -name "genesis*.json" -exec jq -r '.body.messages[].delegator_address' {} \;)"
 
 for val in "${vals[@]}"
 do
