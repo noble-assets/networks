@@ -7,10 +7,10 @@ amount='1000000ustake'
 
 # This is the epoch time when it will unlock
 unlock='531800807734'
-noble_template_path="$(pwd)/genesis_template.json"
+noble_template_path="$(pwd)/genesis_template.txt"
 
 # custom noble template
-# cp $noble_template_path ~/.noble/config/genesis.json
+cp $noble_template_path ~/.noble/config/genesis.json
 
 # Find all the vals and created vested accounts.
 vals=()
