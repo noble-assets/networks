@@ -1,0 +1,103 @@
+{
+  "body": {
+    "messages": [
+      {
+        "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+        "description": {
+          "moniker": "iqlusion",
+          "identity": "DCB176E79AE7D51F",
+          "website": "iqlusion.io",
+          "security_contact": "security@iqlusion.io",
+          "details": ""
+        },
+        "commission": {
+          "rate": "0.100000000000000000",
+          "max_rate": "1.000000000000000000",
+          "max_change_rate": "0.010000000000000000"
+        },
+        "min_self_delegation": "1",
+        "delegator_address": "noble1ft2sjkdx9w0qrzchu83mn4p0ujmv83ucjs2zfw",
+        "validator_address": "noblevaloper1ft2sjkdx9w0qrzchu83mn4p0ujmv83ucuqxjls",
+        "pubkey": {
+          "@type": "/cosmos.crypto.ed25519.PubKey",
+          "key": "6sBxIq293vb+lP2VFy4xicMAhdSZZF2bq6atAP8BtKM="
+        },
+        "value": {
+          "denom": "ustake",
+          "amount": "1000000"
+        }
+      }
+    ],
+    "memo": "fb9ca8ccb65d0cb69c966cdfd6fae7c6a5377f3f@35.230.125.14:26656",
+    "timeout_height": "0",
+    "extension_options": [],
+    "non_critical_extension_options": []
+  },
+  "auth_info": {
+    "signer_infos": [
+      {
+        "public_key": {
+          "@type": "/cosmos.crypto.multisig.LegacyAminoPubKey",
+          "threshold": 3,
+          "public_keys": [
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "ArTJsvxtWUcdZX8fyNTR922d/O09KTy0RcWtsU2T9ysY"
+            },
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "A+5mTEcGf0g2IYZz1yDGR01AlQSPF1PH//wGq3qiLkEb"
+            },
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "Am45Rm3Hp7G7Y6/Vnk0keHtcxBxfj158jLWuxo+QCA+C"
+            },
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "Ayg6pnc1zE6MKdzDihWOND0tpp7F21yiOWyA3myj1ls9"
+            },
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "A0OjtIUCFJM3AobJ9HJTWKP9RZV2+WPcwVjLgsAidrZ/"
+            }
+          ]
+        },
+        "mode_info": {
+          "multi": {
+            "bitarray": {
+              "extra_bits_stored": 5,
+              "elems": "mA=="
+            },
+            "mode_infos": [
+              {
+                "single": {
+                  "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                }
+              },
+              {
+                "single": {
+                  "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                }
+              },
+              {
+                "single": {
+                  "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                }
+              }
+            ]
+          }
+        },
+        "sequence": "0"
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas_limit": "200000",
+      "payer": "",
+      "granter": ""
+    }
+  },
+  "signatures": [
+    "CkB6zH5hecWb2nDyOd7hqhr5aZ1W6dHcV0SQXCvMCU7uqRWZ1veytwu+PY8d3w58DKBOAQ4U7AA0LCi0/Kxhe23OCkCccEvGwnvXO9YsLu3c/CYjgz5SrFxGINaUQJCiP+CYcxgJ9SaqP4XMtaZsnsVah99WSr29YnFoCBbBtc3xSddYCkCcu+nw/lgXGGZlKSSCiOCMOmtmyiol0FZd20gH9OpB2wbT+2NwRFkwo+4b/oNnwzhDRfUldmhqvPPR50XyEyyC"
+  ]
+}
