@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2023-03-28T16:00:00Z",
+  "genesis_time": "2023-03-27T16:00:00Z",
   "chain_id": "noble-1",
   "initial_height": "1",
   "consensus_params": {
@@ -62,6 +62,13 @@
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
           "address": "noble1tq944l2tgxugwvu74yke37yt7pa27p8467rxg5",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "noble1y2egevq0nyzm7w6a9kpxkw86eqytcvxpwsp6d9",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
