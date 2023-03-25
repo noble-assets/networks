@@ -41,6 +41,9 @@ f0496ab244c4bc607948934fb261bf5ca124377d@34.168.216.136:26656
 cca1c141e0bc7c4c0e8570e76278227547199f34@34.82.228.108:26656
 bac93149f2d2f8cdebcae6f7ede003c6d55e9bc5@35.185.245.19:26656
 ```
+## Endpoints
+RPC: https://rpc.mainnet.noble.strange.love:443
+API: RPC: https://api.mainnet.noble.strange.love:443
 
 ## Binary
 
