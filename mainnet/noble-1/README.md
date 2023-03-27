@@ -43,6 +43,9 @@ bac93149f2d2f8cdebcae6f7ede003c6d55e9bc5@35.185.207.177:26656
 
 #Notional
 c23fe2dfd8b48bcb3a4c83e0cf5fe52c8c612aab@65.109.31.114:2590
+
+# B-Harvest
+a59f269303aea7d535c2cf59781f06119b26715c@18.141.244.198:26656
 ```
 ## Endpoints
 RPC: 
