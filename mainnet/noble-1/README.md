@@ -40,10 +40,18 @@ minimum-gas-prices = "0.0uusdc"
 f0496ab244c4bc607948934fb261bf5ca124377d@35.185.197.131:26656
 cca1c141e0bc7c4c0e8570e76278227547199f34@34.83.57.80:26656
 bac93149f2d2f8cdebcae6f7ede003c6d55e9bc5@35.185.207.177:26656
+
+#Notional
+c23fe2dfd8b48bcb3a4c83e0cf5fe52c8c612aab@65.109.31.114:2590
 ```
 ## Endpoints
-RPC: https://rpc.mainnet.noble.strange.love:443  
-API: https://api.mainnet.noble.strange.love:443  
+RPC: 
+* https://rpc.mainnet.noble.strange.love:443  
+* https://rpc-noble-ia.cosmosia.notional.ventures:443
+
+API:
+* https://api.mainnet.noble.strange.love:443  
+* https://api-noble-ia.cosmosia.notional.ventures:443
 
 ## Block Explorer  
 Both testnet and mainnet will temporarly live here. In the near future we will change it to something like `https://explore.noble.strange.love`
