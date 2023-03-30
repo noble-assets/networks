@@ -118,6 +118,10 @@ nobled tx sign neon-upgrade-unsigned.json \
 --from noble130mdu9a0etmeuw52qfxk73pn0ga6gawkt8zz65 \ #change this to match your key
 --node https://rpc.mainnet.noble.strange.love:443 \
 --chain-id noble-1 \
+-sign-mode amino-json \ # for ledgers
+--offline \
+--sequence 0 \ # this will be updated by strangelove for all events.
+--account-number 7 # this will never change on mainnet
 --output-document=strangelove-neon-upgrade-signed.json
 ```
 
