@@ -109,7 +109,7 @@ Binary checksums can differ based on many things to include go, libc, and make v
 
 ## Multi-sig participants
 
-Strangelove has created `neon-upgrade-unsigned.json`.  Please sign by doing the following command
+Strangelove has created `neon-upgrade-unsigned.json`.  Please sign by doing the following command Please ensure you have [prepared your keys](https://github.com/strangelove-ventures/noble-networks/tree/main/mainnet/noble-1/multi-sig#prepare-your-noble-keys) before hand
 
 ```
 # Strangelove example
