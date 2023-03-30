@@ -10,10 +10,10 @@ This upgrade adds the following features:
  
 
 ### Highlights
-- fiat-tokenfactory module added. Currently, this is a copy of tokenfactory
+- fiat-tokenfactory module added.
 
 ### What's Changed
-- waiting on release notes
+[changelog](https://github.com/strangelove-ventures/noble/releases/tag/untagged-5240c6e142fc0739718d)
  
 
 ## Getting Prepared for the Upgrade 
@@ -63,11 +63,12 @@ API:
 * https://api-noble-ia.cosmosia.notional.ventures:443
 
 ## Block Explorer  
+https://explore.strange.love
 https://www.mintscan.io/noble
 
 ## Binary
 
-Docker images are available [here](https://github.com/strangelove-ventures/noble/pkgs/container/noble/changeme?tag=v2.0.0). You can generate the binary by building from the Official Repo. Or alternatively you can use the Verify process below to build inside docker and guarantee you have the correct source.
+Docker images are available [here](https://github.com/strangelove-ventures/noble/pkgs/container/noble/81507034?tag=v2.0.0). You can generate the binary by building from the Official Repo. Or alternatively you can use the Verify process below to build inside docker and guarantee you have the correct source.
 
 ```
 git clone https://github.com/strangelove-ventures/noble
@@ -80,7 +81,7 @@ Binary checksums can differ based on many things to include go, libc, and make v
 
   * [Linux amd64 build](nobled)
   * Version: `v2.0.0`
-  * SHA256: `waiting_on_release`
+  * SHA256: `184ef72be58dce19e67823f4648c0b522ce282220b4aeb678dc396ae2d3f8675`
 
   Example of using a volume mount to get the binary outside of the container onto your ubuntu server.
   ```
@@ -97,11 +98,11 @@ Binary checksums can differ based on many things to include go, libc, and make v
   make install
   sha256sum ~/go/bin/nobled
   ```
-  expected return `waiting_on_release`  
+  expected return `184ef72be58dce19e67823f4648c0b522ce282220b4aeb678dc396ae2d3f8675`  
   
   Now, verify the checksum on your local ubuntu server  
   ```
   #run on your ubuntu server
   sha256sum /home/ubuntu/go/bin/nobled
   ```
-  expected return `waiting_on_release` 
+  expected return `184ef72be58dce19e67823f4648c0b522ce282220b4aeb678dc396ae2d3f8675` 
