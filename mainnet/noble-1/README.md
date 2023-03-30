@@ -63,9 +63,8 @@ API:
 * https://api-noble-ia.cosmosia.notional.ventures:443
 
 ## Block Explorer  
-Both testnet and mainnet will temporarly live here. In the near future we will change it to something like `https://explore.noble.strange.love`
-
-https://ping.testnet.noble.strange.love
+https://explore.strange.love  
+https://www.mintscan.io/noble  
 
 ## Binary
 
