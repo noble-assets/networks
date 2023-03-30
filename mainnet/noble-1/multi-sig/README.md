@@ -46,7 +46,7 @@ _Note: You must have a github account for this._
 ## Prepare your noble keys
 
 ### Import trusted participants
-import all trusted participants. Please verify these against the PRs teams completed.
+don't include your self, but import all remaining trusted participants. Please verify these against the PRs teams completed.
 ```
 nobled keys add binary-builders --pubkey='{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"AlEoYxw7zwWlqyJnuyDmyX6FATXKBe81fqSystV58wQD"}'
 nobled keys add chorus-ones --pubkey='pubkey: '{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"AkVbSTHLqFZKBm2N5wtX5D8tVIEOhxqtN9DKG+8W/6ty"}'\n

@@ -116,7 +116,6 @@ Strangelove has created `neon-upgrade-unsigned.json`.  Please sign by doing the 
 nobled tx sign neon-upgrade-unsigned.json \
 --multisig=noble1tq944l2tgxugwvu74yke37yt7pa27p8467rxg5 \ #keep this as is
 --from noble130mdu9a0etmeuw52qfxk73pn0ga6gawkt8zz65 \ #change this to match your key
---node https://rpc.mainnet.noble.strange.love:443 \
 --chain-id noble-1 \
 -sign-mode amino-json \ # for ledgers
 --offline \
