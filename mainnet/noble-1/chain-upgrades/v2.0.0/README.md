@@ -63,8 +63,8 @@ API:
 * https://api-noble-ia.cosmosia.notional.ventures:443
 
 ## Block Explorer  
-https://explore.strange.love
-https://www.mintscan.io/noble
+https://explore.strange.love  
+https://www.mintscan.io/noble  
 
 ## Binary
 
