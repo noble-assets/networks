@@ -32,7 +32,7 @@ In the event of an issue at upgrade time, we should coordinate via the validator
 ## Chain Details
 ```
 chain-id = "noble-1"
-minimum-gas-prices = "0.0uusdc"
+minimum-gas-prices = "0.025ibc/EF48E6B1A1A19F47ECAEA62F5670C37C0580E86A9E88498B7E393EB6F49F33C0"
 ```
 ## Persistent Peers
 ```
