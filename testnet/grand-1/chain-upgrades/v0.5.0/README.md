@@ -47,12 +47,10 @@ d82829d886635ffcfcef66adfaa725acb522e1c6@83.136.255.243:26656
 ```
 ## Endpoints
 RPC: 
-* https://rpc.mainnet.noble.strange.love:443  
-* https://rpc-noble-ia.cosmosia.notional.ventures:443
+* https://rpc.testnet.noble.strange.love:443  
 
 API:
-* https://api.mainnet.noble.strange.love:443  
-* https://api-noble-ia.cosmosia.notional.ventures:443
+* https://api.testnet.noble.strange.love:443  
 
 ## Block Explorer  
 https://explore.strange.love  
