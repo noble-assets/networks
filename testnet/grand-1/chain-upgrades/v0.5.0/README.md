@@ -1,6 +1,6 @@
 # v0.5.0 raydon
 ## Description
-This is a proposal to do a software upgrade to the `v0.5.0` software tag of the Noble codebase on block height `637000`, which is estimated to occur on `Tuesday 11th April 17:00 UTC`. Block times have high variance, so please monitor the chain for more precise time estimates.  
+This is a proposal to do a software upgrade to the `v0.5.0` software tag of the Noble codebase on block height `645000`, which is estimated to occur on `Wednesday 12th April 18:00 UTC`. Block times have high variance, so please monitor the chain for more precise time estimates.  
 
  
 
@@ -11,7 +11,7 @@ This upgrade adds the following features:
 - changeme
 
 ### What's Changed
-[changelog](https://github.com/strangelove-ventures/noble/releases/tag/changeme)
+[changelog](https://github.com/strangelove-ventures/noble/releases/tag/v0.5.0)
  
 
 ## Getting Prepared for the Upgrade 
@@ -21,7 +21,7 @@ https://github.com/strangelove-ventures/noble#build-and-install-to-go-bin-path
  
 
 ## Details of Upgrade Time 
-The proposal targets the upgrade proposal block to be `637000`, anticipated to be on `Tuesday 11th April 17:00 UTC`. Note that block times have high variance, so keep monitoring the time. See countdown [here](https://testnet.mintscan.io/noble-testnet/blocks/637000).  
+The proposal targets the upgrade proposal block to be `645000`, anticipated to be on `Wednesday 12th April 18:00 UTC`. Note that block times have high variance, so keep monitoring the time. See countdown [here](https://testnet.mintscan.io/noble-testnet/blocks/645000).  
 
 The upgrade is anticipated to take approx 30 minutes, during which time, there will not be any on-chain activity on the network.  
 
@@ -58,7 +58,7 @@ https://www.mintscan.io/noble
 
 ## Binary
 
-Docker images are available [here](https://github.com/strangelove-ventures/noble/pkgs/container/noble/81507034?tag=v0.5.0). You can generate the binary by building from the Official Repo. Or alternatively you can use the Verify process below to build inside docker and guarantee you have the correct source.
+Docker images are available [here](https://github.com/strangelove-ventures/noble/pkgs/container/noble/83866075?tag=v0.5.0). You can generate the binary by building from the Official Repo. Or alternatively you can use the Verify process below to build inside docker and guarantee you have the correct source.
 
 ```
 git clone https://github.com/strangelove-ventures/noble
@@ -71,7 +71,7 @@ Binary checksums can differ based on many things to include go, libc, and make v
 
   * [Linux amd64 build](nobled)
   * Version: `v0.5.0`
-  * SHA256: `184ef72be58dce19e67823f4648c0b522ce282220b4aeb678dc396ae2d3f8675`
+  * SHA256: `949e84d7600f8520d4eecfd2aa67c81f6b25a3c48f8a66fdc58ba1ee19f9c91a`
 
   Example of using a volume mount to get the binary outside of the container onto your ubuntu server.
   ```
@@ -88,11 +88,11 @@ Binary checksums can differ based on many things to include go, libc, and make v
   make install
   sha256sum ~/go/bin/nobled
   ```
-  expected return `184ef72be58dce19e67823f4648c0b522ce282220b4aeb678dc396ae2d3f8675`  
+  expected return `949e84d7600f8520d4eecfd2aa67c81f6b25a3c48f8a66fdc58ba1ee19f9c91a`  
   
   Now, verify the checksum on your local ubuntu server  
   ```
   #run on your ubuntu server
   sha256sum /home/ubuntu/go/bin/nobled
   ```
-  expected return `184ef72be58dce19e67823f4648c0b522ce282220b4aeb678dc396ae2d3f8675` 
+  expected return `949e84d7600f8520d4eecfd2aa67c81f6b25a3c48f8a66fdc58ba1ee19f9c91a` 
