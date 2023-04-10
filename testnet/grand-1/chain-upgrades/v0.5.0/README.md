@@ -8,7 +8,8 @@ This is a proposal to do a software upgrade to the `v0.5.0` software tag of the 
 This upgrade adds the following features:  
 
 ### Highlights
-- changeme
+- Global min-fee module  
+- Tariff module  
 
 ### What's Changed
 [changelog](https://github.com/strangelove-ventures/noble/releases/tag/v0.5.0)
