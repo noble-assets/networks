@@ -1,6 +1,6 @@
 # v0.5.0 raydon
 ## Description
-This is a proposal to do a software upgrade to the `v0.5.0` software tag of the Noble codebase on block height `645000`, which is estimated to occur on `Wednesday 12th April 18:00 UTC`. Block times have high variance, so please monitor the chain for more precise time estimates.  
+This is a proposal to do a software upgrade to the `v0.5.0` software tag of the Noble codebase on block height `645000`, which is estimated to occur on `Wednesday 12th April 17:30 UTC`. Block times have high variance, so please monitor the chain for more precise time estimates.  
 
  
 
@@ -8,7 +8,8 @@ This is a proposal to do a software upgrade to the `v0.5.0` software tag of the 
 This upgrade adds the following features:  
 
 ### Highlights
-- changeme
+- Global min-fee module  
+- Tariff module  
 
 ### What's Changed
 [changelog](https://github.com/strangelove-ventures/noble/releases/tag/v0.5.0)
@@ -21,7 +22,7 @@ https://github.com/strangelove-ventures/noble#build-and-install-to-go-bin-path
  
 
 ## Details of Upgrade Time 
-The proposal targets the upgrade proposal block to be `645000`, anticipated to be on `Wednesday 12th April 18:00 UTC`. Note that block times have high variance, so keep monitoring the time. See countdown [here](https://testnet.mintscan.io/noble-testnet/blocks/645000).  
+The proposal targets the upgrade proposal block to be `645000`, anticipated to be on `Wednesday 12th April 17:30 UTC`. Note that block times have high variance, so keep monitoring the time. See countdown [here](https://testnet.mintscan.io/noble-testnet/blocks/645000).  
 
 The upgrade is anticipated to take approx 30 minutes, during which time, there will not be any on-chain activity on the network.  
 
