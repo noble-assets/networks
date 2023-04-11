@@ -1,4 +1,4 @@
-# v0.5.0 raydon
+# v0.5.0 radon
 ## Description
 This is a proposal to do a software upgrade to the `v0.5.0` software tag of the Noble codebase on block height `645000`, which is estimated to occur on `Wednesday 12th April 17:30 UTC`. Block times have high variance, so please monitor the chain for more precise time estimates.  
 
