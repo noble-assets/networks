@@ -13,7 +13,7 @@ nobled tx vesting create-vesting-account CHANGEME 1000000ustake 531800807734 \
 ### Activate DSRV
 
 ```
-nobled tx vesting create-vesting-account CHANGEME 1000000ustake 531800807734 \
+nobled tx vesting create-vesting-account noble1zttnm2cl60m5ffsrfeqtzkmtvepl4hwnsqg9fd 1000000ustake 531800807734 \
 --from noble1tq944l2tgxugwvu74yke37yt7pa27p8467rxg5 \
 --node https://rpc.noble.strange.love:443 \
 --generate-only > activate-dsrv-unsigned.json
