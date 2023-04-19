@@ -20,7 +20,9 @@ nobled tx vesting create-vesting-account noble1zttnm2cl60m5ffsrfeqtzkmtvepl4hwns
 ```
 
 ## Multi-sig participants
-Strangelove will combine these files to create `activate-luga-and-dsrv-unsigned.json`. Please sign.
+Strangelove will combine these files to create `activate-luga-and-dsrv-unsigned.json`.
+
+Each other member will sign `activate-luga-and-dsrv-unsigned.json` following the example below, and then upload their signed part to this repo.
 
 ### Strangelove example
 ```
