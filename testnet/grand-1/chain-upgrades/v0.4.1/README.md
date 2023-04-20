@@ -61,6 +61,18 @@ f8a0d8942bcf02b94ed875ded9cb23944a53e48a@141.95.97.28:15656
 d82829d886635ffcfcef66adfaa725acb522e1c6@83.136.255.243:26656
 ```
 
+## Endpoints
+RPC: 
+* https://rpc.testnet.noble.strange.love:443  
+
+API:
+* https://api.testnet.noble.strange.love:443  
+
+## Block Explorer  
+https://explore.strange.love  
+https://www.mintscan.io/noble  
+
+
 ## Binary
 
 Docker images are available [here](https://github.com/strangelove-ventures/noble/pkgs/container/noble/72469688?tag=v0.3.0). You can generate the binary by building from the Official Repo. Or alternatively you can use the Verify process below to build inside docker and guarantee you have the correct source.

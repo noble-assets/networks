@@ -43,90 +43,31 @@ _Note: You must have a github account for this._
 * At this point strangelove will review the PR and accept it into the multi-sig
 
 
-## Strangelove will initiate all multi-sig transactions
+## Prepare your noble keys
 
 ### Import trusted participants
-Strangelove will import all multi-sig public keys
+don't include your self, but import all remaining trusted participants. Please verify these against the PRs teams completed.
 ```
-nobled keys add noble-pub --keyring-backend test --pubkey='{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"AlHU9GTWbG2pDsmZPnOqgDHgPD0eingaAjCRLI8LCXS3"}'
+nobled keys add binary-builders --pubkey='{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"AlEoYxw7zwWlqyJnuyDmyX6FATXKBe81fqSystV58wQD"}'
+nobled keys add chorus-ones --pubkey='pubkey: '{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"AkVbSTHLqFZKBm2N5wtX5D8tVIEOhxqtN9DKG+8W/6ty"}'\n
+nobled keys add chorus-one --pubkey='{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"AkVbSTHLqFZKBm2N5wtX5D8tVIEOhxqtN9DKG+8W/6ty"}'\n
+nobled keys add cosmostation --pubkey='{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"Au8rAVDDah4KkMUMSPZfH7I2jAkKqs1yRzPAu9XlwSIt"}'
+nobled keys add everstake --pubkey='{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"AkX8sxQogbXf1snynqbVKobS6Yei2pRAzuJAekqqMQI7"}'
+nobled keys add iqlusion --pubkey='{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"A/TP2SSCqNvfTMskFU5ajgSU2CV/ZEtb11u9yw9WwbsH"}'
+nobled keys add noble --pubkey='{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"AlHU9GTWbG2pDsmZPnOqgDHgPD0eingaAjCRLI8LCXS3"}'
+nobled keys add strangelove --pubkey='{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"A1SgSrlikj83agLUJPYDuWTjPkw4rPzkWgMMy/5RxANy"}'
+```
 
-- name: noble-pub
-type: offline
-address: noble1...
-pubkey: '{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"A24Ms1KsY/WVrg6j+pleIfvnFdjrU0/eB0ha1FRE6hD+"}'
-```
-repeated for all participants.
+### Create the multisig account
 
-### Create new multi-sig wallet from trusted participants.
-Strangelove will create the multi-sig wallet.
+All members should create the multi-sig wallet.
 ```
-nobled keys add noble-multisig \
---multisig-threshold=2 \
---multisig=strangelove-pub,noble-pub,everstake-pub
+nobled keys add noble-multisig \                                  
+--multisig-threshold=5 \
+--multisig=binary-builders,chorus-one,cosmostation,everstake,iqlusion,noble,strangelove
 
 - name: noble-multisig
 type: multi
 address: noble1553j0zdxvnfty72t4vkrm72afrvk33unxdgy9g
 pubkey: '{"@type":"/cosmos.crypto.multisig.LegacyAminoPubKey","threshold":2,"public_keys":[{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"A24Ms1KsY/WVrg6j+pleIfvnFdjrU0/eB0ha1FRE6hD+"},{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"AlRjzl11UtfHJUMTf/IatbiUxOGxnk+E7J9DMFTIb0Uf"},{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"A2AC4WxQQZxeuSRrI1ey+kyGSgpbeV0dKcFzWbTcjeYy"}]}'
 ```
-
-### Activate a new validator
-
-```
-nobled tx vesting create-vesting-account noble10zm5eafxsenx9kfufv6hc3g664xvpv56pnwscy 1000000ustake 531800807734 \
---from noble16n9zygqfkpj735mdnx579j6ma6f7putngjmw0a \
---node https://rpc.mainnet.noble.strange.love:443 \
---generate-only > activate-swissstaking-unsigned.json
-```
-
-### Noble Member
-```
-nobled tx sign activate-swissstaking-unsigned.json \
---multisig=noble16n9zygqfkpj735mdnx579j6ma6f7putngjmw0a \
---from noble1svj4j8tt2wfd8wsswn274h2kkpp5phstfppt2r \
---node https://rpc.mainnet.noble.strange.love:443 \
---chain-id noble-1 \
---output-document=activate-swissstaking-noble.json
-```
-
-### Everstake Member
-```
-nobled tx sign activate-swissstaking-unsigned.json \
---multisig=noble16n9zygqfkpj735mdnx579j6ma6f7putngjmw0a \
---from noble1tewps8n4rwzyen4dc9pn89jdw4j2g3at2ad9uj \
---node https://rpc.mainnet.noble.strange.love:443 \
---chain-id noble-1 \
---output-document=activate-swissstaking-everstake.json
-```
-
-### Strangelove Member
-```
-nobled tx sign activate-swissstaking-unsigned.json \
---multisig=noble16n9zygqfkpj735mdnx579j6ma6f7putngjmw0a \
---from noble18dtpjcgxq2zvsg9qv527rzwyv0ysxlqd0fh5eq \
---node https://rpc.mainnet.noble.strange.love:443 \
---chain-id noble-1 \
---output-document=activate-swissstaking-strangelove.json
-```
-
-### noble-multisig
-```
-nobled tx multisign \
-activate-swissstaking-unsigned.json \
-noble-multisig \
-activate-swissstaking-strangelove.json activate-swissstaking-everstake.json \
---node https://rpc.mainnet.noble.strange.love:443 \
---chain-id noble-1 \
-> activate-swissstaking-signed.json
-```
-
-```
-nobled tx broadcast activate-swissstaking-signed.json \
- --node https://rpc.mainnet.noble.strange.love:443 \
---chain-id noble-1
-```
-
-
-nobled tx bank send noble10zm5eafxsenx9kfufv6hc3g664xvpv56pnwscy noble16n9zygqfkpj735mdnx579j6ma6f7putngjmw0a 1000000ustake \
---node https://rpc.mainnet.noble.strange.love:443 \
---chain-id noble-1
