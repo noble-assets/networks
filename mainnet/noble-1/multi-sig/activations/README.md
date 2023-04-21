@@ -32,7 +32,7 @@ nobled tx sign activate-luga-and-dsrv-unsigned.json \
 --chain-id noble-1 \
 -sign-mode amino-json \ # for ledgers
 --offline \
---sequence 0 \ # this will be updated by strangelove for all events.
+--sequence 1 \ # this will change each new transaction.
 --account-number 7 # this will never change on mainnet
 --output-document=strangelove-activate-luga-and-dsrv-signed.json
 ```
