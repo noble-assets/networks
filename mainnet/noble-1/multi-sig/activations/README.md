@@ -42,7 +42,18 @@ Then submit a PR to this folder with your signed transactions. The file should b
 Once we have 5/7 collected, Strangelove will broadcast the transactions initiating the noble chain to upgrade at the specified time.
 
 ```
- nobled tx broadcast activate-luga-and-dsrv-unsigned.json \
-  --node https://rpc.noble.strange.love:443 \
-  --chain-id noble-1
-  ```
+nobled tx multisign \
+activate-luga-and-dsrv-unsigned.json \
+noble-multisig \
+chorusone-activate-luga-and-dsrv-signed.json cosmostation-activate-luga-and-dsrv-signed.json \
+everstake-activate-luga-and-dsrv-signed.json Iqlusion-activate-luga-and-dsrve-signed.json \
+strangelove-activate-luga-and-dsrv-signed.json \
+--node https://rpc.mainnet.noble.strange.love:443 \
+--chain-id noble-1 \
+> activate-luga-and-dsrv-signed.json
+
+nobled tx broadcast activate-luga-and-dsrv-signed.json \
+ --node https://rpc.mainnet.noble.strange.love:443 \
+--chain-id noble-1
+```
+
