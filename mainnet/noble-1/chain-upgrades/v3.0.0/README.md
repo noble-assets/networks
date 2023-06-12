@@ -117,10 +117,10 @@ nobled tx sign radon-upgrade-unsigned.json \
 --multisig=noble1tq944l2tgxugwvu74yke37yt7pa27p8467rxg5 \ #keep this as is
 --from noble130mdu9a0etmeuw52qfxk73pn0ga6gawkt8zz65 \ #change this to match your key
 --chain-id noble-1 \
--sign-mode amino-json \ # for ledgers
+--sign-mode amino-json \ # for ledgers
 --offline \
 --sequence 2 \ # this will be updated by strangelove for all events.
---account-number 7 # this will never change on mainnet
+--account-number 7 \ # this will never change on mainnet
 --output-document=strangelove-radon-upgrade-signed.json
 ```
 
