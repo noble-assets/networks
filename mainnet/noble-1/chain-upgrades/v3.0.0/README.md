@@ -81,7 +81,7 @@ Binary checksums can differ based on many things to include go, libc, and make v
 
   * [Linux amd64 build](nobled)
   * Version: `v3.0.0`
-  * SHA256: `changeme`
+  * SHA256: `790919fb87713193f34955723cc4c5a6c517475a374785329e13b473e42c22b5`
 
   Example of using a volume mount to get the binary outside of the container onto your ubuntu server.
   ```
@@ -98,14 +98,14 @@ Binary checksums can differ based on many things to include go, libc, and make v
   make install
   sha256sum ~/go/bin/nobled
   ```
-  expected return `changeme`  
+  expected return `790919fb87713193f34955723cc4c5a6c517475a374785329e13b473e42c22b5`  
   
   Now, verify the checksum on your local ubuntu server  
   ```
   #run on your ubuntu server
   sha256sum /home/ubuntu/go/bin/nobled
   ```
-  expected return `changeme` 
+  expected return `790919fb87713193f34955723cc4c5a6c517475a374785329e13b473e42c22b5` 
 
 ## Multi-sig participants
 
@@ -119,7 +119,7 @@ nobled tx sign radon-upgrade-unsigned.json \
 --chain-id noble-1 \
 -sign-mode amino-json \ # for ledgers
 --offline \
---sequence 0 \ # this will be updated by strangelove for all events.
+--sequence 2 \ # this will be updated by strangelove for all events.
 --account-number 7 # this will never change on mainnet
 --output-document=strangelove-radon-upgrade-signed.json
 ```
