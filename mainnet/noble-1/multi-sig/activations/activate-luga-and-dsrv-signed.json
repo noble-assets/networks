@@ -1,0 +1,121 @@
+{
+  "body": {
+    "messages": [
+      {
+        "@type": "/cosmos.vesting.v1beta1.MsgCreateVestingAccount",
+        "from_address": "noble1tq944l2tgxugwvu74yke37yt7pa27p8467rxg5",
+        "to_address": "noble1zttnm2cl60m5ffsrfeqtzkmtvepl4hwnsqg9fd",
+        "amount": [
+          {
+            "denom": "ustake",
+            "amount": "1000000"
+          }
+        ],
+        "end_time": "95625100799",
+        "delayed": false
+      },
+      {
+        "@type": "/cosmos.vesting.v1beta1.MsgCreateVestingAccount",
+        "from_address": "noble1tq944l2tgxugwvu74yke37yt7pa27p8467rxg5",
+        "to_address": "noble1sayrgdn28wsprrf2xm34kjaxe29uy9jknrq2ew",
+        "amount": [
+          {
+            "denom": "ustake",
+            "amount": "1000000"
+          }
+        ],
+        "end_time": "95625100799",
+        "delayed": false
+      }
+    ],
+    "memo": "",
+    "timeout_height": "0",
+    "extension_options": [],
+    "non_critical_extension_options": []
+  },
+  "auth_info": {
+    "signer_infos": [
+      {
+        "public_key": {
+          "@type": "/cosmos.crypto.multisig.LegacyAminoPubKey",
+          "threshold": 5,
+          "public_keys": [
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "AkX8sxQogbXf1snynqbVKobS6Yei2pRAzuJAekqqMQI7"
+            },
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "AlEoYxw7zwWlqyJnuyDmyX6FATXKBe81fqSystV58wQD"
+            },
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "AlHU9GTWbG2pDsmZPnOqgDHgPD0eingaAjCRLI8LCXS3"
+            },
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "A1SgSrlikj83agLUJPYDuWTjPkw4rPzkWgMMy/5RxANy"
+            },
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "AkVbSTHLqFZKBm2N5wtX5D8tVIEOhxqtN9DKG+8W/6ty"
+            },
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "A/TP2SSCqNvfTMskFU5ajgSU2CV/ZEtb11u9yw9WwbsH"
+            },
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "Au8rAVDDah4KkMUMSPZfH7I2jAkKqs1yRzPAu9XlwSIt"
+            }
+          ]
+        },
+        "mode_info": {
+          "multi": {
+            "bitarray": {
+              "extra_bits_stored": 7,
+              "elems": "ng=="
+            },
+            "mode_infos": [
+              {
+                "single": {
+                  "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                }
+              },
+              {
+                "single": {
+                  "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                }
+              },
+              {
+                "single": {
+                  "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                }
+              },
+              {
+                "single": {
+                  "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                }
+              },
+              {
+                "single": {
+                  "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                }
+              }
+            ]
+          }
+        },
+        "sequence": "1"
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas_limit": "1000000",
+      "payer": "",
+      "granter": ""
+    }
+  },
+  "signatures": [
+    "CkDxQSgmdVzUoll9BPx3ViGNw44iRQoUbfiO6oBrpDBCoDGGdjj1qlrvkJ+1QcEFcIm9ssTxo7dM/JmC3ZRUF0BvCkBVFgUBG3vXgUfd9KHkXo7vpmMiMar8WVtl5bd37TTu/1pOjhQWXVrT0FYhOAVAGEGKKMFvL7DoEjlI10dRRx6aCkA/YlbUE53+dGdZqS4FqNNpaPkygfy1ZCAimncIXlXi222Ux32S0wXS7RVyazTsR95C26gtP7NN17qSZJ7+ZQX0CkCfJImF4IxQ8/cgbkza0MaL4vwyDigBwjO6QAcRYr7r70e8OYaTPTttqB845MCLrI9ibKW1R+q10GXRmXierqBJCkAppMFocDnNl0LhT+2dHXFQ2TFRkmure/0g1i7E4sQmjHyWeJwCkUrqP3dTqN83ny0AG9mK6tNQxZXD2+gco87G"
+  ]
+}
