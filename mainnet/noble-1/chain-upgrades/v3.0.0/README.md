@@ -45,4 +45,11 @@ git checkout v3.0.0
 make install
 ```
 
-Verifying the checksum of your built binary is crucial to ensure you're running the correct version. TODO
+Verifying the checksum of your built binary is crucial to ensure you're running the correct version.
+
+```shell
+34d673a83f49a454564e7dca62da535a967d91608110b8c5c178dea4d491ecf2  nobled_darwin_amd64
+72dc6536e4226ec55a16bf89a86e6b75c1af091d1ecb6547be6be639b5bb67c3  nobled_darwin_arm64
+9733e2af05dec3cdc3081aed624147385ee3a61a0d3af47011c1c87dd1a7548e  nobled_linux_amd64
+fc608251d4d19ea744a077cc63b961cdb403066cc687d5149716f5c0c8980688  nobled_linux_arm64
+```
