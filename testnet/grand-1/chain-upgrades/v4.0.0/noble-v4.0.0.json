@@ -3,11 +3,11 @@
     "messages": [
       {
         "@type": "/cosmos.upgrade.v1beta1.MsgSoftwareUpgrade",
-        "authority": "noble1tq944l2tgxugwvu74yke37yt7pa27p8467rxg5",
+        "authority": "noble10uu75g7zl0gnzt0wz46htgqnl5ml27dnthcztx",
         "plan": {
           "name": "argon",
           "time": "0001-01-01T00:00:00Z",
-          "height": "2035000",
+          "height": "2142000",
           "info": "https://github.com/strangelove-ventures/noble-networks/blob/main/testnet/grand-1/chain-upgrades/v4.0.0/README.md",
           "upgraded_client_state": null
         }

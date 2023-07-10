@@ -2,7 +2,7 @@
 
 ## Description
 
-This proposal will perform a software upgrade of the Noble chain to the [`v4.0.0`](https://github.com/strangelove-ventures/noble/releases/tag/v4.0.0) release. The upgrade is planned for block [`2035000`](https://testnet.mintscan.io/noble-testnet/blocks/2035000), estimated to occur on Wed, June 21st, around 15:30 UTC. This time is not exact as block times vary, so please monitor the chain for the exact upgrade time.
+This proposal will perform a software upgrade of the Noble chain to the [`v4.0.0`](https://github.com/strangelove-ventures/noble/releases/tag/v4.0.0) release. The upgrade is planned for block [`2142000`](https://testnet.mintscan.io/noble-testnet/blocks/2142000), estimated to occur on Wed, June 21st, around 15:30 UTC. This time is not exact as block times vary, so please monitor the chain for the exact upgrade time.
 
 This upgrade includes significant changes, namely adding a global fee module and a tariff module. For a more in-depth description, please check out the [release notes](https://github.com/strangelove-ventures/noble/releases/tag/v4.0.0) and well as the [full changelog](https://github.com/strangelove-ventures/noble/compare/v2.0.0...v4.0.0).
 
@@ -10,7 +10,7 @@ This upgrade includes significant changes, namely adding a global fee module and
 
 To perform this upgrade, we must first collect the signatures of all participants of the Noble Maintenance Multisig.
 
-First, make sure your environment is set up following the [multisig](https://github.com/strangelove-ventures/noble-networks/tree/main/mainnet/noble-1/multi-sig) instructions.
+First, make sure your environment is set up following the [multisig](https://github.com/strangelove-ventures/noble-networks/tree/main/mainnet/grand-1/multi-sig) instructions.
 
 After, you can sign the upgrade using the following command:
 
@@ -20,9 +20,9 @@ After, you can sign the upgrade using the following command:
 nobled tx sign unsigned.json \
   --multisig noble1tq944l2tgxugwvu74yke37yt7pa27p8467rxg5 \
   --from noble130mdu9a0etmeuw52qfxk73pn0ga6gawkt8zz65 \
-  --chain-id noble-1 \
-  --account-number 7 \
-  --sequence 2 \
+  --chain-id grand-1 \
+  --account-number 10 \
+  --sequence 4 \
   --sign-mode amino-json \
   --offline \
   --output-document "signatures/strangelove.json"
