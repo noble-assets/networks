@@ -8,7 +8,7 @@
           "name": "argon",
           "time": "0001-01-01T00:00:00Z",
           "height": "2142000",
-          "info": "https://github.com/strangelove-ventures/noble-networks/blob/main/testnet/grand-1/chain-upgrades/v4.0.0/README.md",
+          "info": "https://github.com/strangelove-ventures/noble-networks/blob/main/testnet/grand-1/chain-upgrades/v4.0.0-alpha1/README.md",
           "upgraded_client_state": null
         }
       }
