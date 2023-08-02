@@ -1,25 +1,20 @@
 # Testnet Overview
-Noble will be running testnet rehersals for migrating from a sovereign chain to a consumer chain. All current validators on `noble-1` will be automatically added to the `noble-1-rehearsal-1` genesis file. 
+Noble will be running testnet rehersals for migrating from a sovereign chain to a consumer chain. All current validators on `grand-1` will be automatically added to the `grand-rehearsal-1` genesis file. 
 
 **Remember**, noble is currently a permissioned chain, not all cosmoshub vals are noble vals. Use this chart to figure out which events to participate in.
-
-| I currently validate on: | I should participate in:                         |
-|--------------------------|--------------------------------------------------|
-| noble-1                  | `noble-1-rehearsal-1`                            |
-| cosmohub-4               | `noble-1-rehearsal-1-ics`                        |
-| Both                     | `noble-1-rehearsal-1`, `noble-1-rehearsal-1-ics` |
 
 ## Schedule
 
 | Date                 | Description                                |
 |----------------------|--------------------------------------------|
-| 2023-07-28T15:00:00Z | Join `noble-1-rehearsal-1`  as a validator |
+| 2021-08-17T11:00:00Z | Export `grand-1` as `grand-rehearsal-1` https://testnet.mintscan.io/noble-testnet/blocks/2580000   |
+| 2023-08-18T15:00:00Z | Sync `grand-rehearsal-1` as a full node    |
 
 
 ## Additional tasks to be scheduled
 
-1. Use the existing grand-1 network to carry out a halt height, state export, and then relaunch on ICS, 3 blocks later.
-2. Clone noble-1, and create a new network, `noble-1-rehearsal-1`, to do a halt height, state export, and then relaunch on ICS, 3 blocks later.
+1. Use the existing `grand-rehearsal-1` network to carry out a halt height, state export, and then relaunch on ICS, 3 blocks later.
+2. Clone grand, and create a new network, `grand-rehearsal-1`, to do a halt height, state export, and then relaunch on ICS, 3 blocks later.
 3. C
 
 ## Chain Info
@@ -28,18 +23,18 @@ Noble will be running testnet rehersals for migrating from a sovereign chain to 
 ```
 git clone git@github.com:strangelove-ventures/noble.git
 cd noble
-git checkout noble-1-rehearsal-1
+git checkout grand-rehearsal-1
 make install
 ```
 
 ### Genesis
 ```
-https://raw.githubusercontent.com/strangelove-ventures/noble-networks/main/testnet/noble-1-rehearsal-1/genesis.json
+https://raw.githubusercontent.com/strangelove-ventures/noble-networks/main/testnet/grand-rehearsal-1/genesis.json
 ```
 
 ### client.toml
 ```toml
-chain-id = "noble-1-rehearsal-1"
+chain-id = "grand-rehearsal-1"
 ```
 
 ### config.toml
@@ -55,10 +50,10 @@ minimum-gas-prices = "0.0uusdc"
 
 ## Links
 
-[**https://rpc.noble-1-rehearsal-1.noble.strange.love**](https://rpc.noble-1-rehearsal-1.noble.strange.love:443)
+[**https://rpc.grand-rehearsal-1.noble.strange.love**](https://rpc.grand-rehearsal-1.noble.strange.love:443)
 
-[**https://api.noble-1-rehearsal-1.noble.strange.love**](https://api.noble-1-rehearsal-1.noble.strange.love:443)
+[**https://api.grand-rehearsal-1.noble.strange.love**](https://api.grand-rehearsal-1.noble.strange.love:443)
 
-[**https://explore.strange.love/noble-1-rehearsal-1**](https://explore.strange.love/noble-1-rehearsal-1)
+[**https://explore.strange.love/grand-rehearsal-1**](https://explore.strange.love/grand-rehearsal-1)
 
 ---
