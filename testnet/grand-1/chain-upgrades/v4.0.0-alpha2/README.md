@@ -1,28 +1,43 @@
-# `v4.0.0-alpha2` Upgrade
+---
 
-## Description
+# Upgrade to v4.0.0-alpha2
 
-This proposal will perform a software upgrade of the Noble `grand-1` testnet chain to the [`v4.0.0-alpha2`](https://github.com/strangelove-ventures/noble/releases/tag/v4.0.0-alpha2) release. The upgrade is planned for block [`2667500`](https://testnet.mintscan.io/noble-testnet/blocks/2667500), estimated to occur on Wed, August 23rd, around 11am EST. This time is not exact as block times vary, so please monitor the chain for the exact upgrade time.
+## Overview
 
-This upgrade includes significant changes, namely adding a Circle CCTP module and a Router module. For a more in-depth description, please check out the [release notes](https://github.com/strangelove-ventures/noble/releases/tag/v4.0.0-alpha2) and well as the [full changelog](https://github.com/strangelove-ventures/noble/compare/v3.0.0...v4.0.0-alpha2).
+We are excited to announce the upcoming software upgrade for the Noble `grand-1` testnet chain. This upgrade will transition us to `v4.0.0-alpha2`.
 
-## Upgrade Instructions
+**Key Details:**
+- **Target Block:** [`2667500`](https://testnet.mintscan.io/noble-testnet/blocks/2667500)
+- **Estimated Date & Time:** Wed, August 17th, around 11am EST. *(Please note that this is an approximation. Due to varying block times, it's crucial to monitor the chain for the exact upgrade moment.)*
 
-Once the upgrade height has been reached, your validator will throw a consensus error showing that a new binary is needed to perform the upgrade. It is required that you use this release artifact [binary](https://github.com/strangelove-ventures/noble/releases/tag/v4.0.0-alpha2).
+## Step-by-Step Upgrade Instructions
 
-Verifying the checksum of your binary is crucial to ensure you're running the correct version.
+1. **Set Halt Height:** All validators must set the halt height to `2667500`. There is no on chain instruction to halt.
+2. **Use Pre-Built Binaries:** Choose the appropriate binary for your system:
+   - [AMD](./nobled_linux-amd64)
+   - [ARM](./nobled_linux-arm64)
 
-### Docker
+
+### Using Docker?
+
+Pull the latest image with:
 
 ```shell
-$ docker run -it --rm --entrypoint sha256sum ghcr.io/strangelove-ventures/noble:v4.0.0-alpha2 /bin/nobled
-6d876ff2cbe626672d8cb155360c95436a5c79f0f7bbd78362b124496eb939eb  /bin/nobled
-
+docker pull ghcr.io/strangelove-ventures/noble:v4.0.0-alpha2 /bin/nobled
 ```
 
-### Binary
+### Binary Checksums
+
+Ensure the integrity of your binaries:
 
 ```shell
-$ sha256sum nobled
-6d876ff2cbe626672d8cb155360c95436a5c79f0f7bbd78362b124496eb939eb  nobled
+# For AMD:
+$ sha256sum nobled_linux-amd64
+6d876ff2cbe626672d8cb155360c95436a5c79f0f7bbd78362b124496eb939eb  nobled_linux-amd64
+
+# For ARM:
+$ sha256sum nobled_linux-arm64
+35b03fb0ad2590aa4f74073fea22a6cd2982a5c35bc655e1e8d77dcd775c4591  nobled_linux-arm64
 ```
+
+---
