@@ -4,7 +4,7 @@
 
 ## Overview
 
-We are excited to announce the upcoming software upgrade for the Noble `grand-1` testnet chain. This upgrade will transition us to `v4.0.0-alpha2`.
+We are excited to announce the upcoming software upgrade for the Noble `grand-1` testnet chain. This upgrade will transition us to `v4.0.0-alpha2`. This upgrades adds stability to the cctp and router modules for continued testing.
 
 **Key Details:**
 - **Target Block:** [`2667500`](https://testnet.mintscan.io/noble-testnet/blocks/2667500)
@@ -23,7 +23,7 @@ We are excited to announce the upcoming software upgrade for the Noble `grand-1`
 Pull the latest image with:
 
 ```shell
-docker pull ghcr.io/strangelove-ventures/noble:v4.0.0-alpha2 /bin/nobled
+docker pull ghcr.io/strangelove-ventures/heighliner/noble:v4.0.0-alpha2
 ```
 
 ### Binary Checksums
