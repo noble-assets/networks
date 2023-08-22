@@ -33,11 +33,11 @@ Ensure the integrity of your binaries:
 ```shell
 # For AMD:
 $ sha256sum nobled_linux-amd64
-6d876ff2cbe626672d8cb155360c95436a5c79f0f7bbd78362b124496eb939eb  nobled_linux-amd64
+TBD  nobled_linux-amd64
 
 # For ARM:
 $ sha256sum nobled_linux-arm64
-35b03fb0ad2590aa4f74073fea22a6cd2982a5c35bc655e1e8d77dcd775c4591  nobled_linux-arm64
+TBD  nobled_linux-arm64
 ```
 
 ---
