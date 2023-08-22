@@ -8,7 +8,7 @@ We are excited to announce the upcoming software upgrade for the Noble `grand-1`
 
 **Key Details:**
 - **Target Block:** [`2667500`](https://testnet.mintscan.io/noble-testnet/blocks/2667500)
-- **Estimated Date & Time:** Wed, August 17th, around 11am EST. *(Please note that this is an approximation. Due to varying block times, it's crucial to monitor the chain for the exact upgrade moment.)*
+- **Estimated Date & Time:** Wed, August 23rd, around 11am EST. *(Please note that this is an approximation. Due to varying block times, it's crucial to monitor the chain for the exact upgrade moment.)*
 
 ## Step-by-Step Upgrade Instructions
 
