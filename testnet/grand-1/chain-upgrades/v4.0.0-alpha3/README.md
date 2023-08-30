@@ -40,11 +40,11 @@ Ensure the integrity of your binaries:
 ```shell
 # For AMD:
 $ sha256sum nobled_linux-amd64
-TBD  nobled_linux-amd64
+be176545eda5b8c2cfc10b85804f8f81f6840999b2db0926d5398b3d9f07ca3a  nobled_linux-amd64
 
 # For ARM:
 $ sha256sum nobled_linux-arm64
-TBD  nobled_linux-arm64
+be176545eda5b8c2cfc10b85804f8f81f6840999b2db0926d5398b3d9f07ca3a  nobled_linux-arm64
 ```
 
 ---
