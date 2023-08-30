@@ -34,7 +34,7 @@ $ sha256sum nobled_linux-amd64
 
 # For ARM:
 $ sha256sum nobled_linux-arm64
-aca9a3de05f597e5c511b45c068eee83073e880e96b5a037766f5a18933e3d96  nobled_linux-arm64
+35b03fb0ad2590aa4f74073fea22a6cd2982a5c35bc655e1e8d77dcd775c4591  nobled_linux-arm64
 ```
 
 ---
