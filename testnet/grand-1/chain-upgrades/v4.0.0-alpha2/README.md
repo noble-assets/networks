@@ -15,9 +15,6 @@ We are excited to announce the next software upgrade for the Noble `grand-1` tes
    - [AMD](./nobled_linux-amd64)
    - [ARM](./nobled_linux-arm64)
 
-## Update
-On 8/25/23 we identified that the AMD binary was wrong. We have updated the binary and the checksums below. To resolve this issue we would like to do another halt-height upgrade at block [2700000](https://testnet.mintscan.io/noble-testnet/blocks/2700000)
-
 ### Using Docker?
 
 Pull the latest image with:
@@ -33,7 +30,7 @@ Ensure the integrity of your binaries:
 ```shell
 # For AMD:
 $ sha256sum nobled_linux-amd64
-81a60df2336511ee6dd1e7a9329e79a695c6370d7ab87285140a43995d215ab6  nobled_linux-amd64
+6d876ff2cbe626672d8cb155360c95436a5c79f0f7bbd78362b124496eb939eb  nobled_linux-amd64
 
 # For ARM:
 $ sha256sum nobled_linux-arm64
