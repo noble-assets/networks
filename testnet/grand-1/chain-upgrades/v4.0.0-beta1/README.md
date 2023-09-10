@@ -22,10 +22,10 @@ Here's a way you can verify that your image has the correct binaries:
 $ docker run -it --rm --entrypoint sha256sum ghcr.io/strangelove-ventures/noble:v4.0.0-beta1 /bin/nobled
 
 # AMD64 hosts
-9ace06a7ec3a2f81bef5e8ea6bba912cb5ed500cb4c66a63a2197b2a92952d5f  /bin/nobled
+8e000d450d9948bfc8c700907b482e97cf75c5f2a83e67ff1ef9294507bd31ce  /bin/nobled
 
 # ARM64 hosts
-bc2fcc8050bf702bb728510c1268a05e17128038d8f850c40406359473f0d944  /bin/nobled
+6568fe0e5375c33005156da0af7a2ef5f986cdf4dd758d1ea4b8c4a6dbdf93c0  /bin/nobled
 ```
 ### Binary Checksums
 
@@ -34,11 +34,11 @@ Ensure the integrity of your binaries:
 ```shell
 # For AMD:
 $ sha256sum nobled_linux-amd64
-9ace06a7ec3a2f81bef5e8ea6bba912cb5ed500cb4c66a63a2197b2a92952d5f  nobled_linux-amd64
+8e000d450d9948bfc8c700907b482e97cf75c5f2a83e67ff1ef9294507bd31ce  nobled_linux-amd64
 
 # For ARM:
 $ sha256sum nobled_linux-arm64
-bc2fcc8050bf702bb728510c1268a05e17128038d8f850c40406359473f0d944  nobled_linux-arm64
+6568fe0e5375c33005156da0af7a2ef5f986cdf4dd758d1ea4b8c4a6dbdf93c0  nobled_linux-arm64
 ```
 
 ---
