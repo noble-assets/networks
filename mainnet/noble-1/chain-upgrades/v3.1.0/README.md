@@ -22,7 +22,7 @@ nobled tx sign unsigned.json \
   --from noble130mdu9a0etmeuw52qfxk73pn0ga6gawkt8zz65 \
   --chain-id noble-1 \
   --account-number 7 \
-  --sequence 2 \
+  --sequence 3 \
   --sign-mode amino-json \
   --offline \
   --output-document "signatures/strangelove.json"
