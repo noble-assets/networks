@@ -1,0 +1,6 @@
+#!/bin/bash
+nobled tx upgrade software-upgrade \
+'argon2' \
+--upgrade-height 2772300 \
+--upgrade-info '{"binaries":{"linux/amd64":"https://github.com/strangelove-ventures/noble-networks/raw/main/testnet/grand-1/chain-upgrades/v4.0.0-alpha3/nobled_linux-amd64?checksum=sha256:be176545eda5b8c2cfc10b85804f8f81f6840999b2db0926d5398b3d9f07ca3a","linux/arm64":"https://github.com/strangelove-ventures/noble-networks/raw/main/testnet/grand-1/chain-upgrades/v4.0.0-alpha3/nobled_linux-arm64?checksum=sha256:74f7c07738f8dc5402ff956e61e3207343a8d51efa0ac5cdba440d6c35738ffc"},"urls":{"docs":"https://github.com/strangelove-ventures/noble-networks/blob/main/testnet/grand-1/chain-upgrades/v4.0.0-alpha3/README.md"}}' \
+--from noble10uu75g7zl0gnzt0wz46htgqnl5ml27dnthcztx

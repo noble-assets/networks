@@ -1,0 +1,44 @@
+{
+  "body": {
+    "messages": [
+      {
+        "@type": "/cosmos.staking.v1beta1.MsgDelegate",
+        "delegator_address": "noble10uu75g7zl0gnzt0wz46htgqnl5ml27dnthcztx",
+        "validator_address": "noblevaloper1z7ca4vvukmet6l6kvxvjjzc0v3gdywhrq930m8",
+        "amount": {
+          "denom": "ustake",
+          "amount": "1000000000"
+        }
+      }
+    ],
+    "memo": "",
+    "timeout_height": "0",
+    "extension_options": [],
+    "non_critical_extension_options": []
+  },
+  "auth_info": {
+    "signer_infos": [
+      {
+        "public_key": {
+          "@type": "/cosmos.crypto.secp256k1.PubKey",
+          "key": "AjptY/+hS03W/P69ZiTycAaGndPOdSUQOuqb1DMVO4zv"
+        },
+        "mode_info": {
+          "single": {
+            "mode": "SIGN_MODE_DIRECT"
+          }
+        },
+        "sequence": "20"
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas_limit": "200000",
+      "payer": "",
+      "granter": ""
+    }
+  },
+  "signatures": [
+    "puT8ptMXyP/x4+x61COUW8V0WETnIqavoJQzXPaEH58poMODj0Qybtbg4yUQjVBa1U9MX91zVufSopozPpIC/g=="
+  ]
+}
