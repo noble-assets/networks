@@ -1,0 +1,31 @@
+{
+  "body": {
+    "messages": [
+      {
+        "@type": "/cosmos.upgrade.v1beta1.MsgSoftwareUpgrade",
+        "authority": "noble1tq944l2tgxugwvu74yke37yt7pa27p8467rxg5",
+        "plan": {
+          "name": "v3.1.0",
+          "time": "2023-09-20T17:13:09Z",
+          "height": "2672000",
+          "info": {"binaries":{"linux/amd64":"https://github.com/strangelove-ventures/noble-networks/raw/main/mainnet/noble-1/chain-upgrades/v3.1.0/nobled_linux-amd64?checksum=sha256:6d876ff2cbe626672d8cb155360c95436a5c79f0f7bbd78362b124496eb939eb","linux/arm64":"https://github.com/strangelove-ventures/noble-networks/raw/main/mainnet/noble-1/chain-upgrades/v3.1.0/nobled_linux-arm64?checksum=sha256:35b03fb0ad2590aa4f74073fea22a6cd2982a5c35bc655e1e8d77dcd775c4591"},"urls":{"docs":"https://github.com/strangelove-ventures/noble-networks/blob/main/mainnet/noble-1/chain-upgrades/v3.1.0/README.md"}},
+          "upgraded_client_state": null
+        }
+      }
+    ],
+    "memo": "",
+    "timeout_height": "0",
+    "extension_options": [],
+    "non_critical_extension_options": []
+  },
+  "auth_info": {
+    "signer_infos": [],
+    "fee": {
+      "amount": [],
+      "gas_limit": "250000",
+      "payer": "",
+      "granter": ""
+    }
+  },
+  "signatures": []
+}
