@@ -39,8 +39,8 @@ docker rm arm amd
 sha256sum nobled_linux-amd64 nobled_linux-arm64
 ```
 
-`6d876ff2cbe626672d8cb155360c95436a5c79f0f7bbd78362b124496eb939eb`  nobled_linux-amd64
-`35b03fb0ad2590aa4f74073fea22a6cd2982a5c35bc655e1e8d77dcd775c4591`  nobled_linux-arm64
+`742dbfee67ad193f8926b2be259af25f1b8972edcca623a7dea18dd535cd76d7`  nobled_linux-amd64
+`1160a1d566f59f82e8a065fcdcd2dcf26c0b09ce94f7fe16a4873d3cc984d59c`  nobled_linux-arm64
 
 ## Instructions for Noble Multi-Sig Members
 
