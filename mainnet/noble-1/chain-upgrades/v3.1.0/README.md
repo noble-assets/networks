@@ -53,7 +53,7 @@ After, you can sign the upgrade using the following command:
 ```shell
 # Example using Strangelove's address.
 # NOTE: You must replace the "from" field with your address.
-nobled tx sign unsigned.json \
+nobled tx sign noble-v3.1.0-unsigned.json \
   --multisig noble1tq944l2tgxugwvu74yke37yt7pa27p8467rxg5 \
   --from noble130mdu9a0etmeuw52qfxk73pn0ga6gawkt8zz65 \
   --chain-id noble-1 \
@@ -61,7 +61,7 @@ nobled tx sign unsigned.json \
   --sequence 3 \
   --sign-mode amino-json \
   --offline \
-  --output-document "signatures/strangelove.json"
+  --output-document "signatures/strangelove-noble-v3.1.0-signed.json"
 ```
 
 Once you have signed, please submit a PR to this repository. Once enough signatures (5/7) have been collected, we will broadcast the upgrade on chain.
