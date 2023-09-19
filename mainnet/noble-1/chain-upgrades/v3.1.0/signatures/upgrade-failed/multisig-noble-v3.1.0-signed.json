@@ -1,0 +1,106 @@
+{
+  "body": {
+    "messages": [
+      {
+        "@type": "/cosmos.upgrade.v1beta1.MsgSoftwareUpgrade",
+        "authority": "noble1tq944l2tgxugwvu74yke37yt7pa27p8467rxg5",
+        "plan": {
+          "name": "v3.1.0",
+          "time": "2023-09-20T17:13:09Z",
+          "height": "2672000",
+          "info": "{\"binaries\":{\"linux/amd64\":\"https://github.com/strangelove-ventures/noble-networks/raw/main/mainnet/noble-1/chain-upgrades/v3.1.0/nobled_linux-amd64?checksum=sha256:742dbfee67ad193f8926b2be259af25f1b8972edcca623a7dea18dd535cd76d7\",\"linux/arm64\":\"https://github.com/strangelove-ventures/noble-networks/raw/main/mainnet/noble-1/chain-upgrades/v3.1.0/nobled_linux-arm64?checksum=sha256:1160a1d566f59f82e8a065fcdcd2dcf26c0b09ce94f7fe16a4873d3cc984d59c\"},\"urls\":{\"docs\":\"https://github.com/strangelove-ventures/noble-networks/blob/main/mainnet/noble-1/chain-upgrades/v3.1.0/README.md\"}}",
+          "upgraded_client_state": null
+        }
+      }
+    ],
+    "memo": "",
+    "timeout_height": "0",
+    "extension_options": [],
+    "non_critical_extension_options": []
+  },
+  "auth_info": {
+    "signer_infos": [
+      {
+        "public_key": {
+          "@type": "/cosmos.crypto.multisig.LegacyAminoPubKey",
+          "threshold": 5,
+          "public_keys": [
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "AkX8sxQogbXf1snynqbVKobS6Yei2pRAzuJAekqqMQI7"
+            },
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "AlEoYxw7zwWlqyJnuyDmyX6FATXKBe81fqSystV58wQD"
+            },
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "AlHU9GTWbG2pDsmZPnOqgDHgPD0eingaAjCRLI8LCXS3"
+            },
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "A1SgSrlikj83agLUJPYDuWTjPkw4rPzkWgMMy/5RxANy"
+            },
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "AkVbSTHLqFZKBm2N5wtX5D8tVIEOhxqtN9DKG+8W/6ty"
+            },
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "A/TP2SSCqNvfTMskFU5ajgSU2CV/ZEtb11u9yw9WwbsH"
+            },
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "Au8rAVDDah4KkMUMSPZfH7I2jAkKqs1yRzPAu9XlwSIt"
+            }
+          ]
+        },
+        "mode_info": {
+          "multi": {
+            "bitarray": {
+              "extra_bits_stored": 7,
+              "elems": "2g=="
+            },
+            "mode_infos": [
+              {
+                "single": {
+                  "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                }
+              },
+              {
+                "single": {
+                  "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                }
+              },
+              {
+                "single": {
+                  "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                }
+              },
+              {
+                "single": {
+                  "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                }
+              },
+              {
+                "single": {
+                  "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                }
+              }
+            ]
+          }
+        },
+        "sequence": "3"
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas_limit": "250000",
+      "payer": "",
+      "granter": ""
+    }
+  },
+  "signatures": [
+    "CkA5J96F8KghPDMV8MG7FQZ3+5momJe5tGqv8cDV8Ys8r2Cfn91ONaH4HkVe3BD+1+tz0nZpnaIBGFX4kHaSCxnwCkCEtt8080+Kw/5kOI6WrJvsp9JBwLRP+gMxBLEBjKiBuRdPGsO9l2f+kl2iExRzEVL7AOz3IUV75rZimia5YdzPCkByIiWV7fWh6DB6EWurJYF1aTzK6TkwCbIVFza5oVSfj107YtcTHs6OrkNniy2we1nhphAw14VuFO3WCqt9cdZjCkDeEjfp1qasfNm5PL8FdBRbCkkwLDpQcuKYv0+N2BvmXXtBRnsy0ZeZtSDY2t+y3HVWMoLhhEm3KI/s9WKEl3wSCkDL/2SzRNj6vtWm+L2zUjMUUhoThvV7+MmWS8aNkRG6Ok4INy58cFO/EA+U2lpPNnegJOONza3+zEnycPtjHZrc"
+  ]
+}
