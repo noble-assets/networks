@@ -4,7 +4,7 @@
 
 This proposal will perform a software upgrade of the Noble chain to the [`v4.0.0`](https://github.com/strangelove-ventures/noble/releases/tag/v4.0.0) release. The upgrade is planned for block [`2897800`](https://www.mintscan.io/noble/blocks/2897800), estimated to occur on Thursday, October 5th, around 16:14 UTC. This time is not exact as block times vary, so please monitor the chain for the exact upgrade time.
 
-This upgrade includes significant changes, namely support for IBC inside the ParamAuthority. For a more in-depth description, please check out the [release notes](https://github.com/strangelove-ventures/noble/releases/tag/v4.0.0) and well as the [full changelog](https://github.com/strangelove-ventures/noble/compare/v3.1.0...v4.0.0).
+This upgrade includes the production-ready Circle CCTP protocol implementation. For a more in-depth description, please check out the [release notes](https://github.com/strangelove-ventures/noble/releases/tag/v4.0.0) and well as the [full changelog](https://github.com/strangelove-ventures/noble/compare/v3.1.0...v4.0.0).
 
 ## Build Instructions
 
