@@ -8,7 +8,7 @@
           "name": "v4.0.0",
           "time": "0001-01-01T00:00:00Z",
           "height": "2897800",
-          "info": "{\"binaries\":{\"linux/amd64\":\"https://github.com/strangelove-ventures/noble-networks/raw/main/mainnet/noble-1/chain-upgrades/v4.0.0/nobled_linux-amd64?checksum=sha256:bc27dc2af75f8a7d6bf0a46c2b55acf8445bb6c892b8dac74cdffb5f3726a7e0\",\"linux/arm64\":\"https://github.com/strangelove-ventures/noble-networks/raw/main/mainnet/noble-1/chain-upgrades/v4.0.0/nobled_linux-arm64?checksum=sha256:f443f932176c4db047726d6922ccf84fc4a1d52b304cf16039df840075d42b90\"},\"urls\":{\"docs\":\"https://github.com/strangelove-ventures/noble-networks/blob/main/mainnet/noble-1/chain-upgrades/v4.0.0/README.md\"}}",
+          "info": "{\"binaries\":{\"linux/amd64\":\"https://github.com/strangelove-ventures/noble/releases/download/v4.0.0/nobled_linux-amd64?checksum=sha256:bc27dc2af75f8a7d6bf0a46c2b55acf8445bb6c892b8dac74cdffb5f3726a7e0\",\"linux/arm64\":\"https://github.com/strangelove-ventures/noble/releases/download/v4.0.0/nobled_linux-arm64?checksum=sha256:f443f932176c4db047726d6922ccf84fc4a1d52b304cf16039df840075d42b90\"},\"urls\":{\"docs\":\"https://github.com/strangelove-ventures/noble-networks/blob/main/mainnet/noble-1/chain-upgrades/v4.0.0/README.md\"}}",
           "upgraded_client_state": null
         }
       },
