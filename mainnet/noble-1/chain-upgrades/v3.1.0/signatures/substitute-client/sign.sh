@@ -7,7 +7,7 @@ noble-multisig \
 binary-substitute-crescent-signed.json \
 chorusone-substitute-crescent-signed.json \
 cosmostation-substitute-crescent-signed.json \
-Everstake-v3.1.0-substitute-crescent-signed.json \
+Everstake-substitute-crescent-signed.json \
 strangelove-substitute-crescent-signed.json \
 --node https://rpc.mainnet.noble.strange.love:443 \
 --chain-id noble-1 \
