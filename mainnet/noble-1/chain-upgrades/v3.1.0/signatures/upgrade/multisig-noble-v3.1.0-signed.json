@@ -2,10 +2,15 @@
   "body": {
     "messages": [
       {
-        "@type": "/paramauthority.ibc.core.client.v1.MsgClientUpdate",
+        "@type": "/cosmos.upgrade.v1beta1.MsgSoftwareUpgrade",
         "authority": "noble1tq944l2tgxugwvu74yke37yt7pa27p8467rxg5",
-        "subject_client_id": "07-tendermint-1",
-        "substitute_client_id": "07-tendermint-22"
+        "plan": {
+          "name": "v3.1.0",
+          "time": "0001-01-01T00:00:00Z",
+          "height": "2672000",
+          "info": "{\"binaries\":{\"linux/amd64\":\"https://github.com/strangelove-ventures/noble-networks/raw/main/mainnet/noble-1/chain-upgrades/v3.1.0/nobled_linux-amd64?checksum=sha256:742dbfee67ad193f8926b2be259af25f1b8972edcca623a7dea18dd535cd76d7\",\"linux/arm64\":\"https://github.com/strangelove-ventures/noble-networks/raw/main/mainnet/noble-1/chain-upgrades/v3.1.0/nobled_linux-arm64?checksum=sha256:1160a1d566f59f82e8a065fcdcd2dcf26c0b09ce94f7fe16a4873d3cc984d59c\"},\"urls\":{\"docs\":\"https://github.com/strangelove-ventures/noble-networks/blob/main/mainnet/noble-1/chain-upgrades/v3.1.0/README.md\"}}",
+          "upgraded_client_state": null
+        }
       }
     ],
     "memo": "",
@@ -85,7 +90,7 @@
             ]
           }
         },
-        "sequence": "4"
+        "sequence": "3"
       }
     ],
     "fee": {
@@ -96,6 +101,6 @@
     }
   },
   "signatures": [
-    "CkBohdtnrmI3PLRSBEnle36VByZMh2FqUMuvo++UXobjUD5HZ5yRdJBoOcehWtx5mc3MrRavDad6fWUQMmfogKbWCkDlNFZzI1kJHGJazUyW/s0DLHBX0/W0Ybi2dfLlOFFXon0jBUy2rQ/qTbJnQPEifU2g17rARJxq4U1y8QDqo5ICCkA3sDm1Sp2QkoyNTeTNWt2rciqci7fFST5ML4BhiSkc8n9joiW7+Df0js/oEXsYz4Z43akeMqQc0ViiYBXCYltzCkDpu8wsqZ1FFYn346/5Y8ngvshX7txPe9FZA8VVSNBB9iCsVTtXCvm4VdsTQFLz4uRIZejJzuab4kmn9YlIH+D7CkDRAMN6Kiuq/nRaIiQomTTrpQ5FCCuNSKV5cIc/nU9b9mqKahdBpf8dSyqzlW8/F6MyERaRQ4qkTNIiObTSxXnV"
+    "CkCIxIVheJ9gg8r/BV8zcU91mNbfldzIjSvIhY7NsWNlmEbBPncmtifYQu5oVCLpHsROdWO0SSp48EyEQDDsU8eyCkBqB3IonBLMLwS4yK5jhb5gI/8ozd74HmvWPOyZuh6AyQWM+/J2GwkJkz7G6fQ8ZZk9IeDa54vG2SQ37AsTyz9MCkAo46IQMGERgfgJTPZry5x4WIjK50O8VEqPUPMZRPYUmXBi//yppkzeC6TlyCGPKpEupkic6tM5udv/VxPBvCKQCkC+TYQiBavYf7KwSR+G4iQr2KZfx2mn4tbYad8B4J4Yoikv6oI0jdYYcZElxHnL2RysRaA/D3ho+wCUoeAClT13CkCS62zkpvqWDID8d8BRdK1LzItjmlMVenkKha1zKynHkz01RZo0nfaouDlpsvu2ngdberndKmRnm+mmv4DmE55l"
   ]
 }
