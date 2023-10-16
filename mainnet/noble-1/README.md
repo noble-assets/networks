@@ -36,11 +36,6 @@ minimum-gas-prices = "0.0uusdc"
 ```
 ## Persistent Peers
 ```
-#Strangelove
-60b94cdc05e282738d6a9cc5813a4b453e942461@35.185.197.131:26656
-25eb8845bb3b85cacb64319909d04aeed3aba93a@34.83.57.80:26656
-58a8d53f7abb8570eac1c6cf5f7a2f5a7145224c@35.185.207.177:26656
-
 #Notional
 c23fe2dfd8b48bcb3a4c83e0cf5fe52c8c612aab@65.109.31.114:2590
 
