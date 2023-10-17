@@ -1,0 +1,106 @@
+{
+  "body": {
+    "messages": [
+      {
+        "@type": "/paramauthority.ibc.core.client.v1.MsgClientUpdate",
+        "authority": "noble1tq944l2tgxugwvu74yke37yt7pa27p8467rxg5",
+        "subject_client_id": "07-tendermint-12",
+        "substitute_client_id": "07-tendermint-34"
+      }
+    ],
+    "memo": "",
+    "timeout_height": "0",
+    "extension_options": [],
+    "non_critical_extension_options": []
+  },
+  "auth_info": {
+    "signer_infos": [
+      {
+        "public_key": {
+          "@type": "/cosmos.crypto.multisig.LegacyAminoPubKey",
+          "threshold": 5,
+          "public_keys": [
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "AkX8sxQogbXf1snynqbVKobS6Yei2pRAzuJAekqqMQI7"
+            },
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "AlEoYxw7zwWlqyJnuyDmyX6FATXKBe81fqSystV58wQD"
+            },
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "AlHU9GTWbG2pDsmZPnOqgDHgPD0eingaAjCRLI8LCXS3"
+            },
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "A1SgSrlikj83agLUJPYDuWTjPkw4rPzkWgMMy/5RxANy"
+            },
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "AkVbSTHLqFZKBm2N5wtX5D8tVIEOhxqtN9DKG+8W/6ty"
+            },
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "A/TP2SSCqNvfTMskFU5ajgSU2CV/ZEtb11u9yw9WwbsH"
+            },
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "Au8rAVDDah4KkMUMSPZfH7I2jAkKqs1yRzPAu9XlwSIt"
+            }
+          ]
+        },
+        "mode_info": {
+          "multi": {
+            "bitarray": {
+              "extra_bits_stored": 7,
+              "elems": "ug=="
+            },
+            "mode_infos": [
+              {
+                "single": {
+                  "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                }
+              },
+              {
+                "single": {
+                  "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                }
+              },
+              {
+                "single": {
+                  "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                }
+              },
+              {
+                "single": {
+                  "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                }
+              },
+              {
+                "single": {
+                  "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                }
+              }
+            ]
+          }
+        },
+        "sequence": "5"
+      }
+    ],
+    "fee": {
+      "amount": [
+        {
+          "denom": "uusdc",
+          "amount": "0"
+        }
+      ],
+      "gas_limit": "250000",
+      "payer": "",
+      "granter": ""
+    }
+  },
+  "signatures": [
+    "CkAK035LfQypsHWsP7r/Z5OZueEOXe1+ik7HEAknPcJ2AGIDGtf5jSp2N+4AMlLoXeI9ZUe0eu5xWTzZ+lkoqWGNCkA8e/95OlH/hgWD8Ojxb8VjWreOnCrEl/Mx+cIoCz8tEFSLUyGNwOKe7ufz1Bka0hbGyiFaB1Z0Vt1+mLQ3d3rjCkATiwAoBElv0rZrMaV6JcCpH8iyZotAXhS0wRr11x68nDdEZzrBG8hgH0dTs/bvXar4k+XDLuCNWqoWlAJnqgU+CkAk9tO4/hblTbB8216pK20M6Xln3GaceNFtMFJxLEBgnl6rprWijo9u/eiSavqoqVEPeNwU48ImOLokHNvHc/yaCkCDka9qtD3omAS+dnNHcVtRG3cV8pPbvl5Uj1/OobN8xX+4xjELQ6xWX8kT6ISMh0NF5YpOqBdEzaIDjX78P8fI"
+  ]
+}
