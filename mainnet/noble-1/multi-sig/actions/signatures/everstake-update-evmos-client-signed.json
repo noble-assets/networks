@@ -1,1 +1,17 @@
-{"signatures":[{"public_key":{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"AkX8sxQogbXf1snynqbVKobS6Yei2pRAzuJAekqqMQI7"},"data":{"single":{"mode":"SIGN_MODE_LEGACY_AMINO_JSON","signature":"CtN+S30MqbB1rD+6/2eTmbnhDl3tfopOxxAJJz3CdgBiAxrX+Y0qdjfuADJS6F3iPWVHtHrucVk82fpZKKlhjQ=="}},"sequence":"5"}]}
+{
+  "signatures": [
+    {
+      "public_key": {
+        "@type": "/cosmos.crypto.secp256k1.PubKey",
+        "key": "AkX8sxQogbXf1snynqbVKobS6Yei2pRAzuJAekqqMQI7"
+      },
+      "data": {
+        "single": {
+          "mode": "SIGN_MODE_LEGACY_AMINO_JSON",
+          "signature": "CtN+S30MqbB1rD+6/2eTmbnhDl3tfopOxxAJJz3CdgBiAxrX+Y0qdjfuADJS6F3iPWVHtHrucVk82fpZKKlhjQ=="
+        }
+      },
+      "sequence": "5"
+    }
+  ]
+}
