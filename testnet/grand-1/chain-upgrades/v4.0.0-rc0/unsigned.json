@@ -8,7 +8,7 @@
           "name": "v4.0.0-rc0",
           "time": "0001-01-01T00:00:00Z",
           "height": "3748000",
-          "info": "TODO",
+          "info": "{\"binaries\":{\"linux/amd64\":\"https://github.com/strangelove-ventures/noble/releases/download/v4.0.0-rc0/nobled_linux-amd64?checksum=sha256:73a56fddb340e6dae161987d3f6d1aac3d01bc5df9efa1693b42ba01e79d72d1\",\"linux/arm64\":\"https://github.com/strangelove-ventures/noble/releases/download/v4.0.0-rc0/nobled_linux-arm64?checksum=sha256:2d489395c684a0d6f7b00c092866805a5f98a453a1908135bd7e5d93aa21b6e0\"},\"urls\":{\"docs\":\"https://github.com/strangelove-ventures/noble-networks/blob/main/testnet/grand-1/chain-upgrades/v4.0.0-rc0/README.md\"}}",
           "upgraded_client_state": null
         }
       }
