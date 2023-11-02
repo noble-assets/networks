@@ -19,7 +19,20 @@
     "non_critical_extension_options": []
   },
   "auth_info": {
-    "signer_infos": [],
+    "signer_infos": [
+      {
+        "public_key": {
+          "@type": "/cosmos.crypto.secp256k1.PubKey",
+          "key": "AjptY/+hS03W/P69ZiTycAaGndPOdSUQOuqb1DMVO4zv"
+        },
+        "mode_info": {
+          "single": {
+            "mode": "SIGN_MODE_DIRECT"
+          }
+        },
+        "sequence": "48"
+      }
+    ],
     "fee": {
       "amount": [],
       "gas_limit": "250000",
@@ -27,5 +40,7 @@
       "granter": ""
     }
   },
-  "signatures": []
+  "signatures": [
+    "03oEUx9HkD98Njbn8NCRYSSdDLgNOd7nI9Wtvesv6rIU5TKtOS+wleMroAeb+v5AiDw+KRlKcc6CR6wQ9vW2mQ=="
+  ]
 }
