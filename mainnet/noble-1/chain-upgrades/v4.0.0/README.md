@@ -2,7 +2,7 @@
 
 ## Description
 
-This proposal will perform a software upgrade of the Noble chain to the [`v4.0.0`](https://github.com/strangelove-ventures/noble/releases/tag/v4.0.0) release. The upgrade is planned for block [`3377500`](https://www.mintscan.io/noble/blocks/3377500), estimated to occur on Mon, November 6th, around 13:30 UTC. This time is not exact as block times vary, so please monitor the chain for the exact upgrade time.
+This proposal will perform a software upgrade of the Noble chain to the [`v4.0.0`](https://github.com/strangelove-ventures/noble/releases/tag/v4.0.0) release. The upgrade is planned for block [`3408600`](https://www.mintscan.io/noble/blocks/3408600), estimated to occur on Wed, November 8th, around 15:00 UTC. This time is not exact as block times vary, so please monitor the chain for the exact upgrade time.
 
 This upgrade includes significant changes, namely adding Circle's [Cross Chain Transfer Protocol (CCTP)](https://github.com/circlefin/noble-cctp) module. For a more in-depth description, please check out the [release notes](https://github.com/strangelove-ventures/noble/releases/tag/v4.0.0) and well as the [changelog](https://github.com/strangelove-ventures/noble/blob/v4.0.0/CHANGELOG.md).
 
@@ -48,5 +48,6 @@ make install
 Verifying the checksum of your built binary is crucial to ensure you're running the correct version.
 
 ```shell
-TODO
+031b402365e124343f3cde7618712ddf8e6edd0a6d3e4ae50006814ed18a5457  ./nobled_linux-amd64
+041729da9114e46c137e3388210abd0ddb6414688497c22551fc2ae06e3ce1ff  ./nobled_linux-arm64
 ```
