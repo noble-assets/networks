@@ -2,14 +2,13 @@ package e2e_test
 
 import (
 	"context"
-	"os"
+	"encoding/json"
 	"testing"
+	"time"
 
 	"github.com/strangelove-ventures/interchaintest/v4"
 	"github.com/strangelove-ventures/interchaintest/v4/chain/cosmos"
 	"github.com/strangelove-ventures/interchaintest/v4/ibc"
-	"github.com/strangelove-ventures/interchaintest/v4/testreporter"
-	"github.com/strangelove-ventures/interchaintest/v4/testutil"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/zap/zaptest"
 )
@@ -17,8 +16,6 @@ import (
 func TestGenesis(t *testing.T) {
 	ctx := context.Background()
 	logger := zaptest.NewLogger(t)
-	reporter := testreporter.NewNopReporter()
-	execReporter := reporter.RelayerExecReporter(t)
 	client, network := interchaintest.DockerSetup(t)
 
 	factory := interchaintest.NewBuiltinChainFactory(logger, []*interchaintest.ChainSpec{
@@ -42,8 +39,14 @@ func TestGenesis(t *testing.T) {
 				GasAdjustment:  5,
 				TrustingPeriod: "504h",
 				NoHostMount:    false,
-				ModifyGenesis: func(_ ibc.ChainConfig, _ []byte) ([]byte, error) {
-					return os.ReadFile("../genesis.json")
+				ModifyGenesis: func(cc ibc.ChainConfig, b []byte) ([]byte, error) {
+					var gen map[string]any
+					err := json.Unmarshal(b, &gen)
+					if err != nil {
+						return nil, err
+					}
+					gen["genesis_time"] = time.Now().UTC().Format(time.RFC3339)
+					return json.Marshal(gen)
 				},
 			},
 		},
@@ -53,17 +56,7 @@ func TestGenesis(t *testing.T) {
 	require.NoError(t, err)
 
 	noble := chains[0].(*cosmos.CosmosChain)
-	interchain := interchaintest.NewInterchain().AddChain(noble)
 
-	require.NoError(t, interchain.Build(ctx, execReporter, interchaintest.InterchainBuildOptions{
-		TestName:  t.Name(),
-		Client:    client,
-		NetworkID: network,
-	}))
-
-	t.Cleanup(func() {
-		_ = interchain.Close()
-	})
-
-	require.NoError(t, testutil.WaitForBlocks(ctx, 10, noble))
+	err = noble.StartWithGenesisFile(ctx, t.Name(), client, network, "../genesis.json")
+	require.NoError(t, err)
 }
