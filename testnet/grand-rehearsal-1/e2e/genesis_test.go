@@ -27,7 +27,7 @@ func TestGenesis(t *testing.T) {
 				Images: []ibc.DockerImage{
 					{
 						Repository: "ghcr.io/strangelove-ventures/noble",
-						Version:    "v4.0.0",
+						Version:    "v4.0.1",
 						UidGid:     "1025:1025",
 					},
 				},
