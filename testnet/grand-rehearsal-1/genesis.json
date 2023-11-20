@@ -7889,7 +7889,206 @@
         "slash_fraction_double_sign": "1.000000000000000000",
         "slash_fraction_downtime": "0.000000000000000000"
       },
-      "signing_infos": []
+      "signing_infos": [
+        {
+          "address": "noblevalcons1q9zckc0s6l0xayre3l5vxuzp84ccav6vgndf9n",
+          "validator_signing_info": {
+            "address": "noblevalcons1q9zckc0s6l0xayre3l5vxuzp84ccav6vgndf9n",
+            "index_offset": "3910192",
+            "jailed_until": "1970-01-01T00:00:00Z",
+            "missed_blocks_counter": "1181",
+            "start_height": "0",
+            "tombstoned": false
+          }
+        },
+        {
+          "address": "noblevalcons1qtgej368w67d2fmlvla9kyuspdxykl92e5zk36",
+          "validator_signing_info": {
+            "address": "noblevalcons1qtgej368w67d2fmlvla9kyuspdxykl92e5zk36",
+            "index_offset": "3910192",
+            "jailed_until": "1970-01-01T00:00:00Z",
+            "missed_blocks_counter": "0",
+            "start_height": "0",
+            "tombstoned": false
+          }
+        },
+        {
+          "address": "noblevalcons1q796y8mfrdr0tm24yh0c4u22v96n9rw64mvgvc",
+          "validator_signing_info": {
+            "address": "noblevalcons1q796y8mfrdr0tm24yh0c4u22v96n9rw64mvgvc",
+            "index_offset": "2",
+            "jailed_until": "2023-04-12T14:48:27.612058134Z",
+            "missed_blocks_counter": "2",
+            "start_height": "0",
+            "tombstoned": false
+          }
+        },
+        {
+          "address": "noblevalcons1p6gfflz7xtqq50kay4lles3tpwe00amvzmxlgr",
+          "validator_signing_info": {
+            "address": "noblevalcons1p6gfflz7xtqq50kay4lles3tpwe00amvzmxlgr",
+            "index_offset": "950492",
+            "jailed_until": "2023-09-12T01:17:13.539589857Z",
+            "missed_blocks_counter": "0",
+            "start_height": "0",
+            "tombstoned": false
+          }
+        },
+        {
+          "address": "noblevalcons1raxt478msreh68228fy6mztapkrgv5r9u0f0x8",
+          "validator_signing_info": {
+            "address": "noblevalcons1raxt478msreh68228fy6mztapkrgv5r9u0f0x8",
+            "index_offset": "3910192",
+            "jailed_until": "1970-01-01T00:00:00Z",
+            "missed_blocks_counter": "0",
+            "start_height": "0",
+            "tombstoned": false
+          }
+        },
+        {
+          "address": "noblevalcons1fgtqpv8lk8r684sfnvsu8zsgl4kvn28gt0l7nr",
+          "validator_signing_info": {
+            "address": "noblevalcons1fgtqpv8lk8r684sfnvsu8zsgl4kvn28gt0l7nr",
+            "index_offset": "3910192",
+            "jailed_until": "1970-01-01T00:00:00Z",
+            "missed_blocks_counter": "3",
+            "start_height": "0",
+            "tombstoned": false
+          }
+        },
+        {
+          "address": "noblevalcons1t4ttmk3ntqkghfyu0cxthgff2ljc57lgjyvjef",
+          "validator_signing_info": {
+            "address": "noblevalcons1t4ttmk3ntqkghfyu0cxthgff2ljc57lgjyvjef",
+            "index_offset": "2",
+            "jailed_until": "2023-03-16T07:06:39.607851059Z",
+            "missed_blocks_counter": "2",
+            "start_height": "0",
+            "tombstoned": false
+          }
+        },
+        {
+          "address": "noblevalcons1v94en5tuw5z8tqhkqgw3def34l0fhf26aafz98",
+          "validator_signing_info": {
+            "address": "noblevalcons1v94en5tuw5z8tqhkqgw3def34l0fhf26aafz98",
+            "index_offset": "162170",
+            "jailed_until": "2023-10-26T21:34:14.634920790Z",
+            "missed_blocks_counter": "0",
+            "start_height": "0",
+            "tombstoned": false
+          }
+        },
+        {
+          "address": "noblevalcons1d3wyx85t644nuqfjcp57ptrknqg8fqfnecndd2",
+          "validator_signing_info": {
+            "address": "noblevalcons1d3wyx85t644nuqfjcp57ptrknqg8fqfnecndd2",
+            "index_offset": "2",
+            "jailed_until": "2023-07-19T19:40:10.166221337Z",
+            "missed_blocks_counter": "2",
+            "start_height": "0",
+            "tombstoned": false
+          }
+        },
+        {
+          "address": "noblevalcons10rgfy889uy2t2enelqg0fwk7ut3lxacvyxt0kj",
+          "validator_signing_info": {
+            "address": "noblevalcons10rgfy889uy2t2enelqg0fwk7ut3lxacvyxt0kj",
+            "index_offset": "3910192",
+            "jailed_until": "1970-01-01T00:00:00Z",
+            "missed_blocks_counter": "0",
+            "start_height": "0",
+            "tombstoned": false
+          }
+        },
+        {
+          "address": "noblevalcons13ryszctdgr6925ele85n2gv5clvt5e8yt5q6yn",
+          "validator_signing_info": {
+            "address": "noblevalcons13ryszctdgr6925ele85n2gv5clvt5e8yt5q6yn",
+            "index_offset": "1797977",
+            "jailed_until": "1970-01-01T00:00:00Z",
+            "missed_blocks_counter": "609",
+            "start_height": "0",
+            "tombstoned": false
+          }
+        },
+        {
+          "address": "noblevalcons13spuglfgcxr5tcrgwrfy8p4kvtslttvkd2s4fp",
+          "validator_signing_info": {
+            "address": "noblevalcons13spuglfgcxr5tcrgwrfy8p4kvtslttvkd2s4fp",
+            "index_offset": "732174",
+            "jailed_until": "2023-09-26T06:10:11.077767868Z",
+            "missed_blocks_counter": "0",
+            "start_height": "0",
+            "tombstoned": false
+          }
+        },
+        {
+          "address": "noblevalcons1jgr49hstz2h4f7jl6jkxeal98pzr6mnfc35s8h",
+          "validator_signing_info": {
+            "address": "noblevalcons1jgr49hstz2h4f7jl6jkxeal98pzr6mnfc35s8h",
+            "index_offset": "3910192",
+            "jailed_until": "1970-01-01T00:00:00Z",
+            "missed_blocks_counter": "0",
+            "start_height": "0",
+            "tombstoned": false
+          }
+        },
+        {
+          "address": "noblevalcons1n3w88x79tj7de78nn62trm8ay0ye76u0c6nfq2",
+          "validator_signing_info": {
+            "address": "noblevalcons1n3w88x79tj7de78nn62trm8ay0ye76u0c6nfq2",
+            "index_offset": "3910192",
+            "jailed_until": "1970-01-01T00:00:00Z",
+            "missed_blocks_counter": "0",
+            "start_height": "0",
+            "tombstoned": false
+          }
+        },
+        {
+          "address": "noblevalcons1n7jcrf4u2y8uetr44hxqrwnc6hq309dah40v53",
+          "validator_signing_info": {
+            "address": "noblevalcons1n7jcrf4u2y8uetr44hxqrwnc6hq309dah40v53",
+            "index_offset": "213347",
+            "jailed_until": "2023-10-26T01:58:01.538981719Z",
+            "missed_blocks_counter": "0",
+            "start_height": "0",
+            "tombstoned": false
+          }
+        },
+        {
+          "address": "noblevalcons145kw4v25mfnwxsv7rkxg8n4f9z848y3827g37g",
+          "validator_signing_info": {
+            "address": "noblevalcons145kw4v25mfnwxsv7rkxg8n4f9z848y3827g37g",
+            "index_offset": "3910192",
+            "jailed_until": "1970-01-01T00:00:00Z",
+            "missed_blocks_counter": "0",
+            "start_height": "0",
+            "tombstoned": false
+          }
+        },
+        {
+          "address": "noblevalcons1h226jmu4zxfq4gw8msygwl5vpfvfcv7z6ave6r",
+          "validator_signing_info": {
+            "address": "noblevalcons1h226jmu4zxfq4gw8msygwl5vpfvfcv7z6ave6r",
+            "index_offset": "917916",
+            "jailed_until": "1970-01-01T00:00:00Z",
+            "missed_blocks_counter": "0",
+            "start_height": "0",
+            "tombstoned": false
+          }
+        },
+        {
+          "address": "noblevalcons1e7n94e82d2qac385tsqhu0cs3ns774uw2pd43p",
+          "validator_signing_info": {
+            "address": "noblevalcons1e7n94e82d2qac385tsqhu0cs3ns774uw2pd43p",
+            "index_offset": "1805050",
+            "jailed_until": "2023-06-28T14:57:55.645981083Z",
+            "missed_blocks_counter": "0",
+            "start_height": "0",
+            "tombstoned": false
+          }
+        }
+      ]
     },
     "staking": {
       "delegations": [
@@ -8752,7 +8951,7 @@
     },
     "version": {}
   },
-  "genesis_time": "2023-11-17T14:00:00Z",
+  "genesis_time": "2023-11-21T15:00:00Z",
   "initial_height": "0",
   "validators": [
     {
