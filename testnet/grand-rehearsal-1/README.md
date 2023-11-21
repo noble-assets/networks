@@ -7,7 +7,7 @@ The Noble Core Team is conducting a testnet rehearsal in coordination with both 
 | Date                                                                             | Description                                 |
 |----------------------------------------------------------------------------------|---------------------------------------------|
 | [2023-11-14T11:28:58Z](https://testnet.mintscan.io/noble-testnet/blocks/3910193) | Export `grand-1` as `grand-rehearsal-1`     |
-| 2023-11-21T15:00:00Z                                                             | `grand-rehearsal-1` starts producing blocks |
+| 2023-11-22T17:00:00Z                                                             | `grand-rehearsal-1` starts producing blocks |
 
 ## Instructions
 

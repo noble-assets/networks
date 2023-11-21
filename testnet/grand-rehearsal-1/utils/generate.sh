@@ -7,7 +7,7 @@ cp utils/export_3910193.json genesis.json
 cat <<< $(jq -r '.chain_id = "grand-rehearsal-1"' genesis.json) > genesis.json
 
 # Update the Genesis Time.
-cat <<< $(jq -r '.genesis_time = "2023-11-21T15:00:00Z"' genesis.json) > genesis.json
+cat <<< $(jq -r '.genesis_time = "2023-11-22T17:00:00Z"' genesis.json) > genesis.json
 
 # Reset the Capability App State.
 cat <<< $(jq -r '.app_state.capability.index = "1"' genesis.json) > genesis.json
