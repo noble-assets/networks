@@ -27,7 +27,13 @@ This will initialise the `.noble` directory on your machine.
 
 Next, you will want to fetch the [`grand-rehearsal-1` genesis file](../genesis.json) and place it at `.noble/config/genesis.json`.
 
-Below you will find a list of peers exposed by a few of the validators currently running on the standalone `grand-rehearsal-1` network. You can go ahead and put these as your `persistent_peers` setting inside the `.noble/config/config.toml` file.
+The Noble Core Team runs a seed node that full nodes can use to connect to the network.
+
+```shell
+a8dcf19336c6fe57a60a8f2091fb54f23582e6b5@15.222.245.132:26656
+```
+
+Additionally, below you will find a list of peers exposed by a few of the validators currently running on the standalone `grand-rehearsal-1` network.
 
 ```shell
 # Stakecito
