@@ -68,8 +68,13 @@
   "auth_info": {
     "signer_infos": [],
     "fee": {
-      "amount": [],
-      "gas_limit": "250000",
+      "amount": [
+        {
+          "denom": "uusdc",
+          "amount": "100000"
+        }
+      ],
+      "gas_limit": "1000000",
       "payer": "",
       "granter": ""
     }
