@@ -1,0 +1,158 @@
+{
+  "body": {
+    "messages": [
+      {
+        "@type": "/cosmos.params.v1beta1.MsgUpdateParams",
+        "authority": "noble1tq944l2tgxugwvu74yke37yt7pa27p8467rxg5",
+        "change_proposal": {
+          "title": "",
+          "description": "",
+          "changes": [
+            {
+              "subspace": "globalfee",
+              "key": "MinimumGasPricesParam",
+              "value": "[{\"denom\":\"ibc/EF48E6B1A1A19F47ECAEA62F5670C37C0580E86A9E88498B7E393EB6F49F33C0\",\"amount\":\"0.010000000000000000\"},{\"denom\":\"uusdc\",\"amount\":\"0.100000000000000000\"}]"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "/cosmos.params.v1beta1.MsgUpdateParams",
+        "authority": "noble1tq944l2tgxugwvu74yke37yt7pa27p8467rxg5",
+        "change_proposal": {
+          "title": "",
+          "description": "",
+          "changes": [
+            {
+              "subspace": "globalfee",
+              "key": "BypassMinFeeMsgTypesParam",
+              "value": "[\"/circle.cctp.v1.MsgAcceptOwner\",\"/circle.cctp.v1.MsgAddRemoteTokenMessenger\",\"/circle.cctp.v1.MsgDepositForBurn\",\"/circle.cctp.v1.MsgDepositForBurnWithCaller\",\"/circle.cctp.v1.MsgDisableAttester\",\"/circle.cctp.v1.MsgEnableAttester\",\"/circle.cctp.v1.MsgLinkTokenPair\",\"/circle.cctp.v1.MsgPauseBurningAndMinting\",\"/circle.cctp.v1.MsgPauseSendingAndReceivingMessages\",\"/circle.cctp.v1.MsgReceiveMessage\",\"/circle.cctp.v1.MsgRemoveRemoteTokenMessenger\",\"/circle.cctp.v1.MsgReplaceDepositForBurn\",\"/circle.cctp.v1.MsgReplaceMessage\",\"/circle.cctp.v1.MsgSendMessage\",\"/circle.cctp.v1.MsgSendMessageWithCaller\",\"/circle.cctp.v1.MsgSetMaxBurnAmountPerMessage\",\"/circle.cctp.v1.MsgUnlinkTokenPair\",\"/circle.cctp.v1.MsgUnpauseBurningAndMinting\",\"/circle.cctp.v1.MsgUnpauseSendingAndReceivingMessages\",\"/circle.cctp.v1.MsgUpdateAttesterManager\",\"/circle.cctp.v1.MsgUpdateMaxMessageBodySize\",\"/circle.cctp.v1.MsgUpdateOwner\",\"/circle.cctp.v1.MsgUpdatePauser\",\"/circle.cctp.v1.MsgUpdateSignatureThreshold\",\"/circle.cctp.v1.MsgUpdateTokenController\",\"/cosmos.params.v1beta1.MsgUpdateParams\",\"/cosmos.upgrade.v1beta1.MsgCancelUpgrade\",\"/cosmos.upgrade.v1beta1.MsgSoftwareUpgrade\",\"/ibc.applications.transfer.v1.MsgTransfer\",\"/ibc.core.channel.v1.MsgAcknowledgement\",\"/ibc.core.channel.v1.MsgRecvPacket\",\"/ibc.core.channel.v1.MsgTimeout\",\"/ibc.core.channel.v1.MsgTimeoutOnClose\",\"/ibc.core.client.v1.MsgUpdateClient\",\"/noble.fiattokenfactory.MsgAcceptOwner\",\"/noble.fiattokenfactory.MsgBlacklist\",\"/noble.fiattokenfactory.MsgBurn\",\"/noble.fiattokenfactory.MsgConfigureMinter\",\"/noble.fiattokenfactory.MsgConfigureMinterController\",\"/noble.fiattokenfactory.MsgMint\",\"/noble.fiattokenfactory.MsgPause\",\"/noble.fiattokenfactory.MsgRemoveMinter\",\"/noble.fiattokenfactory.MsgRemoveMinterController\",\"/noble.fiattokenfactory.MsgUnblacklist\",\"/noble.fiattokenfactory.MsgUnpause\",\"/noble.fiattokenfactory.MsgUpdateBlacklister\",\"/noble.fiattokenfactory.MsgUpdateMasterMinter\",\"/noble.fiattokenfactory.MsgUpdateOwner\",\"/noble.fiattokenfactory.MsgUpdatePauser\",\"/noble.tokenfactory.MsgAcceptOwner\",\"/noble.tokenfactory.MsgBlacklist\",\"/noble.tokenfactory.MsgBurn\",\"/noble.tokenfactory.MsgConfigureMinter\",\"/noble.tokenfactory.MsgConfigureMinterController\",\"/noble.tokenfactory.MsgMint\",\"/noble.tokenfactory.MsgPause\",\"/noble.tokenfactory.MsgRemoveMinter\",\"/noble.tokenfactory.MsgRemoveMinterController\",\"/noble.tokenfactory.MsgUnblacklist\",\"/noble.tokenfactory.MsgUnpause\",\"/noble.tokenfactory.MsgUpdateBlacklister\",\"/noble.tokenfactory.MsgUpdateMasterMinter\",\"/noble.tokenfactory.MsgUpdateOwner\",\"/noble.tokenfactory.MsgUpdatePauser\",\"/paramauthority.ibc.core.client.v1.MsgClientUpdate\",\"/paramauthority.ibc.core.client.v1.MsgUpgrade\"]"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "/cosmos.params.v1beta1.MsgUpdateParams",
+        "authority": "noble1tq944l2tgxugwvu74yke37yt7pa27p8467rxg5",
+        "change_proposal": {
+          "title": "",
+          "description": "",
+          "changes": [
+            {
+              "subspace": "tariff",
+              "key": "TransferFeeBPS",
+              "value": "\"10\""
+            }
+          ]
+        }
+      },
+      {
+        "@type": "/cosmos.vesting.v1beta1.MsgCreateVestingAccount",
+        "from_address": "noble1tq944l2tgxugwvu74yke37yt7pa27p8467rxg5",
+        "to_address": "noble1x20lytyf6zkcrv5edpkfkn8sz578qg5sa7lthe",
+        "amount": [
+          {
+            "denom": "ustake",
+            "amount": "1000000"
+          }
+        ],
+        "end_time": "95625100799",
+        "delayed": false
+      }
+    ],
+    "memo": "",
+    "timeout_height": "0",
+    "extension_options": [],
+    "non_critical_extension_options": []
+  },
+  "auth_info": {
+    "signer_infos": [
+      {
+        "public_key": {
+          "@type": "/cosmos.crypto.multisig.LegacyAminoPubKey",
+          "threshold": 5,
+          "public_keys": [
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "AkX8sxQogbXf1snynqbVKobS6Yei2pRAzuJAekqqMQI7"
+            },
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "AlEoYxw7zwWlqyJnuyDmyX6FATXKBe81fqSystV58wQD"
+            },
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "AlHU9GTWbG2pDsmZPnOqgDHgPD0eingaAjCRLI8LCXS3"
+            },
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "A1SgSrlikj83agLUJPYDuWTjPkw4rPzkWgMMy/5RxANy"
+            },
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "AkVbSTHLqFZKBm2N5wtX5D8tVIEOhxqtN9DKG+8W/6ty"
+            },
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "A/TP2SSCqNvfTMskFU5ajgSU2CV/ZEtb11u9yw9WwbsH"
+            },
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "Au8rAVDDah4KkMUMSPZfH7I2jAkKqs1yRzPAu9XlwSIt"
+            }
+          ]
+        },
+        "mode_info": {
+          "multi": {
+            "bitarray": {
+              "extra_bits_stored": 7,
+              "elems": "bg=="
+            },
+            "mode_infos": [
+              {
+                "single": {
+                  "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                }
+              },
+              {
+                "single": {
+                  "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                }
+              },
+              {
+                "single": {
+                  "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                }
+              },
+              {
+                "single": {
+                  "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                }
+              },
+              {
+                "single": {
+                  "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                }
+              }
+            ]
+          }
+        },
+        "sequence": "7"
+      }
+    ],
+    "fee": {
+      "amount": [
+        {
+          "denom": "uusdc",
+          "amount": "100000"
+        }
+      ],
+      "gas_limit": "1000000",
+      "payer": "",
+      "granter": ""
+    }
+  },
+  "signatures": [
+    "CkAQq5j0jGb9pNiuPh5QTjcw8Ej5hnpQZ1Sh3rudJIDOagqR2owzAMjYUq6d5yVb8S0bWKgketqOXNBgjNoNAQS6CkDUZWZsqOik+IjUTgqXoV5mhM5GcF8ofm3gSITef08baXEz1vk3MeMt4ikqiSGdj8LExM92gktxaJMEh5PNlTiFCkBUnhV/vNOmoPGTWlpNxxeTzYMmLFSvkX7tgQizDFJAvCuY/hhU8XF3rvdsTHTtpasYyHkPyzv/otDqLqNf6UC3CkCSYVGE158Z43VWNk3EWz9px4sD4PHn9KrL4bP7lAdashx1HtwJusApqwHx3q3JSXNNqr9vkI92F+YH1YORUJqUCkB1aQ1DQ+qDEdb8WoLmuk4svTp+0d5LHiiId4nwoup4ZSi1SCZNsdAmQ3AQbeWKYNk2c1f4AgMn7qRz+7xRu4WQ"
+  ]
+}

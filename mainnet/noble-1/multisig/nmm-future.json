@@ -1,0 +1,6 @@
+{
+  "name": "nmm-future",
+  "type": "multi",
+  "address": "noble1z5asz4edtrnayjjxzxetkvwear0f2dd8amwkhd",
+  "pubkey": "{\"@type\":\"/cosmos.crypto.multisig.LegacyAminoPubKey\",\"threshold\":5,\"public_keys\":[{\"@type\":\"/cosmos.crypto.secp256k1.PubKey\",\"key\":\"AlEoYxw7zwWlqyJnuyDmyX6FATXKBe81fqSystV58wQD\"},{\"@type\":\"/cosmos.crypto.secp256k1.PubKey\",\"key\":\"AlHU9GTWbG2pDsmZPnOqgDHgPD0eingaAjCRLI8LCXS3\"},{\"@type\":\"/cosmos.crypto.secp256k1.PubKey\",\"key\":\"A1SgSrlikj83agLUJPYDuWTjPkw4rPzkWgMMy/5RxANy\"},{\"@type\":\"/cosmos.crypto.secp256k1.PubKey\",\"key\":\"AjnhAYRwCwDCsA5bWgfUDCqLIRid6qXmhkVKXtplc6tZ\"},{\"@type\":\"/cosmos.crypto.secp256k1.PubKey\",\"key\":\"AkVbSTHLqFZKBm2N5wtX5D8tVIEOhxqtN9DKG+8W/6ty\"},{\"@type\":\"/cosmos.crypto.secp256k1.PubKey\",\"key\":\"A/TP2SSCqNvfTMskFU5ajgSU2CV/ZEtb11u9yw9WwbsH\"},{\"@type\":\"/cosmos.crypto.secp256k1.PubKey\",\"key\":\"Au8rAVDDah4KkMUMSPZfH7I2jAkKqs1yRzPAu9XlwSIt\"}]}"
+}
