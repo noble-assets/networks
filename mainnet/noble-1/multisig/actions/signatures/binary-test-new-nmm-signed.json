@@ -3,12 +3,12 @@
     {
       "public_key": {
         "@type": "/cosmos.crypto.secp256k1.PubKey",
-        "key": "AjnhAYRwCwDCsA5bWgfUDCqLIRid6qXmhkVKXtplc6tZ"
+        "key": "AlEoYxw7zwWlqyJnuyDmyX6FATXKBe81fqSystV58wQD"
       },
       "data": {
         "single": {
           "mode": "SIGN_MODE_LEGACY_AMINO_JSON",
-          "signature": "/VZtGmzNwNtsB0RuvoYrZ7Bpk5w/iE4oXIDxtJaChHtI7j4qP9OrzZAt/li76NO1akuUnCLZrIAEyG6XQu6pww=="
+          "signature": "3Q23wfCcrpGjMCZhQf9lJIGW6WUnI4BKqDU494AUuQM3xe6JgwFQPMSDjKplaUUpWMeqAHgbT7DVs0+5gFCOMA=="
         }
       },
       "sequence": "0"
