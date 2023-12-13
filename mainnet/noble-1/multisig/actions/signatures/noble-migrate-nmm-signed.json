@@ -1,0 +1,17 @@
+{
+  "signatures": [
+    {
+      "public_key": {
+        "@type": "/cosmos.crypto.secp256k1.PubKey",
+        "key": "AlHU9GTWbG2pDsmZPnOqgDHgPD0eingaAjCRLI8LCXS3"
+      },
+      "data": {
+        "single": {
+          "mode": "SIGN_MODE_LEGACY_AMINO_JSON",
+          "signature": "LVubE9AAp3+SqOcFDwsaDBpefaPJR127YPdOYzg6knlisYDZlxFwj1ARItBCxuX268omxYAa7738z6aU9mN+EQ=="
+        }
+      },
+      "sequence": "8"
+    }
+  ]
+}
