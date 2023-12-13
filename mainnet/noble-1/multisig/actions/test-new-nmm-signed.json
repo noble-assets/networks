@@ -1,0 +1,103 @@
+{
+  "body": {
+    "messages": [
+      {
+        "@type": "/circle.cctp.v1.MsgDepositForBurn",
+        "from": "noble1z5asz4edtrnayjjxzxetkvwear0f2dd8amwkhd",
+        "amount": "100000000",
+        "destination_domain": 0,
+        "mint_recipient": "AAAAAAAAAAAAAAAA1BiV7CDsOD4fbr/yZbrB5gR2y8E=",
+        "burn_token": "uusdc"
+      }
+    ],
+    "memo": "So long, and thanks for all the fish.",
+    "timeout_height": "0",
+    "extension_options": [],
+    "non_critical_extension_options": []
+  },
+  "auth_info": {
+    "signer_infos": [
+      {
+        "public_key": {
+          "@type": "/cosmos.crypto.multisig.LegacyAminoPubKey",
+          "threshold": 5,
+          "public_keys": [
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "AlEoYxw7zwWlqyJnuyDmyX6FATXKBe81fqSystV58wQD"
+            },
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "AlHU9GTWbG2pDsmZPnOqgDHgPD0eingaAjCRLI8LCXS3"
+            },
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "A1SgSrlikj83agLUJPYDuWTjPkw4rPzkWgMMy/5RxANy"
+            },
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "AjnhAYRwCwDCsA5bWgfUDCqLIRid6qXmhkVKXtplc6tZ"
+            },
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "AkVbSTHLqFZKBm2N5wtX5D8tVIEOhxqtN9DKG+8W/6ty"
+            },
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "A/TP2SSCqNvfTMskFU5ajgSU2CV/ZEtb11u9yw9WwbsH"
+            },
+            {
+              "@type": "/cosmos.crypto.secp256k1.PubKey",
+              "key": "Au8rAVDDah4KkMUMSPZfH7I2jAkKqs1yRzPAu9XlwSIt"
+            }
+          ]
+        },
+        "mode_info": {
+          "multi": {
+            "bitarray": {
+              "extra_bits_stored": 7,
+              "elems": "2g=="
+            },
+            "mode_infos": [
+              {
+                "single": {
+                  "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                }
+              },
+              {
+                "single": {
+                  "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                }
+              },
+              {
+                "single": {
+                  "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                }
+              },
+              {
+                "single": {
+                  "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                }
+              },
+              {
+                "single": {
+                  "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                }
+              }
+            ]
+          }
+        },
+        "sequence": "0"
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas_limit": "1000000",
+      "payer": "",
+      "granter": ""
+    }
+  },
+  "signatures": [
+    "CkDdDbfB8JyukaMwJmFB/2UkgZbpZScjgEqoNTj3gBS5AzfF7omDAVA8xIOMqmVpRSlYx6oAeBtPsNWzT7mAUI4wCkBq1ohKsoSbl3hO0dbL2OFYWx8VnjMA6Ghv75NqXYAkEwhMA+qnZGdFqyxo4Jn6Vg9cbr9oaaulRt8W2L/1STg6CkD9Vm0abM3A22wHRG6+hitnsGmTnD+ITihcgPG0loKEe0juPio/06vNkC3+WLvo07VqS5ScItmsgATIbpdC7qnDCkB8pZaV6yYnF+43csVIZ+PwZQ0GlnAG1CmU1oMtgdYB5RGmiv67N4ArPp2Jy5XNUdQWUT0lFE7ImTa2miEN/EFWCkBHrk0rM5CQpvUSmpfYn/QiE8anjwVrY87e0h7yadUapGWQyDWqeDeFgSt/c9kNKeFeyJLq6rcfNPn7tOkdtS9d"
+  ]
+}
