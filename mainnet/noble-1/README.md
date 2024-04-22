@@ -36,6 +36,10 @@ minimum-gas-prices = "0.0uusdc"
 ```
 ## Persistent Peers
 ```
+#Keplr
+08d9b0fd3d4407a5f141f383fde6f32c06f95134@159.89.21.233:30192, 
+afb6bc227f15553a0e8fed6adced7cac259cd378@146.190.222.171:26656
+
 #Notional
 c23fe2dfd8b48bcb3a4c83e0cf5fe52c8c612aab@65.109.31.114:2590
 
