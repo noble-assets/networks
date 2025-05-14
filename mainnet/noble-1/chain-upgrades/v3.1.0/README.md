@@ -46,7 +46,7 @@ sha256sum nobled_linux-amd64 nobled_linux-arm64
 
 To perform this upgrade, we must first collect the signatures of all participants of the Noble Maintenance Multisig.
 
-First, make sure your environment is set up following the [multisig](https://github.com/strangelove-ventures/noble-networks/tree/main/mainnet/noble-1/multi-sig) instructions.
+First, make sure your environment is set up following the [multisig](https://github.com/strangelove-ventures/noble-networks/tree/main/mainnet/noble-1/multisig) instructions.
 
 After, you can sign the upgrade using the following command:
 
