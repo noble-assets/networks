@@ -10,7 +10,7 @@ This upgrade includes significant changes, namely adding Circle's [Cross Chain T
 
 To perform this upgrade, we must first collect the signatures of all participants of the Noble Maintenance Multisig.
 
-First, make sure your environment is set up following the [multisig](https://github.com/strangelove-ventures/noble-networks/tree/main/mainnet/noble-1/multi-sig) instructions.
+First, make sure your environment is set up following the [multisig](https://github.com/strangelove-ventures/noble-networks/tree/main/mainnet/noble-1/multisig) instructions.
 
 After, you can sign the upgrade using the following command:
 
